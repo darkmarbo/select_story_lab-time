@@ -1,0 +1,396 @@
+find_ok:num_txt=1	ST_jj=0	wer_str=0.000000	cmd_wer:./wer "a midsummer night's dream" "a midsummer night's dream"	01_Track_01+1.210204+3.044762
+find_ok:num_txt=2	ST_jj=1	wer_str=0.000000	cmd_wer:./wer "based on the play by william shakespeare" "based on the play by william shakespeare"	01_Track_01+3.044762+5.714739
+find_ok:num_txt=3	ST_jj=2	wer_str=0.000000	cmd_wer:./wer "adapted by lesley sims" "adapted by lesley sims"	01_Track_01+5.715011+7.885034
+find_ok:num_txt=4	ST_jj=2	wer_str=1.526316	cmd_wer:./wer "when you hear this sound turn the page" "when you hear this sound"	01_Track_01+7.885805+9.696800
+find_ok:num_txt=5	ST_jj=5	wer_str=0.000000	cmd_wer:./wer "the characters" "the characters"	02_Track_02+0.133197+1.158186
+find_ok:num_txt=6	ST_jj=6	wer_str=0.000000	cmd_wer:./wer "theseus duke of athens engaged to hippolyta" "theseus duke of athens engaged to hippolyta"	02_Track_02+2.577279+6.402313
+find_ok:num_txt=7	ST_jj=7	wer_str=0.000000	cmd_wer:./wer "hippolyta queen of the amazons" "hippolyta queen of the amazons"	02_Track_02+6.402313+10.478413
+find_ok:num_txt=8	ST_jj=8	wer_str=0.000000	cmd_wer:./wer "egeus father of hermia wants her to marry demetrius" "egeus father of hermia wants her to marry demetrius"	02_Track_02+10.478413+15.523356
+find_ok:num_txt=9	ST_jj=9	wer_str=0.000000	cmd_wer:./wer "hermia in love with lysander" "hermia in love with lysander"	02_Track_02+15.523356+18.718277
+find_ok:num_txt=10	ST_jj=10	wer_str=0.000000	cmd_wer:./wer "lysander in love with hermia but enchanted to fall in love with helena" "lysander in love with hermia but enchanted to fall in love with helena"	02_Track_02+18.718277+24.263220
+find_ok:num_txt=11	ST_jj=11	wer_str=0.000000	cmd_wer:./wer "demetrius also in love with hermia and enchanted to fall in love with helena" "demetrius also in love with hermia and enchanted to fall in love with helena"	02_Track_02+24.263220+30.003220
+find_ok:num_txt=12	ST_jj=12	wer_str=0.000000	cmd_wer:./wer "helena hermia's best friend in love with demetrius" "helena hermia's best friend in love with demetrius"	02_Track_02+30.003356+35.253379
+find_ok:num_txt=13	ST_jj=13	wer_str=0.000000	cmd_wer:./wer "oberon king of the fairies married to titania" "oberon king of the fairies married to titania"	02_Track_02+35.763356+40.378322
+find_ok:num_txt=14	ST_jj=14	wer_str=0.000000	cmd_wer:./wer "titania queen of the fairies" "titania queen of the fairies"	02_Track_02+40.378458+43.473469
+find_ok:num_txt=15	ST_jj=14	wer_str=1.020000	cmd_wer:./wer "puck the fairy who enchants lysander and demetrius" "snug who plays a lion"	02_Track_02+61.643356+64.313061
+find_ok:num_txt=16	ST_jj=14	wer_str=0.913793	cmd_wer:./wer "peter quince who is putting on a play for theseus the duke" "starveling who plays the moon"	02_Track_02+67.007891+69.702902
+find_ok:num_txt=17	ST_jj=16	wer_str=0.000000	cmd_wer:./wer "bottom who plays pyramus a young man" "bottom who plays pyramus a young man"	02_Track_02+53.068118+56.718095
+find_ok:num_txt=18	ST_jj=17	wer_str=0.000000	cmd_wer:./wer "flute who plays thisbe a young girl in love with pyramus" "flute who plays thisbe a young girl in love with pyramus"	02_Track_02+56.718095+61.643084
+find_ok:num_txt=19	ST_jj=18	wer_str=0.000000	cmd_wer:./wer "snug who plays a lion" "snug who plays a lion"	02_Track_02+61.643356+64.313061
+find_ok:num_txt=20	ST_jj=19	wer_str=0.000000	cmd_wer:./wer "snout who plays a wall" "snout who plays a wall"	02_Track_02+64.313061+67.007891
+find_ok:num_txt=21	ST_jj=20	wer_str=0.000000	cmd_wer:./wer "starveling who plays the moon" "starveling who plays the moon"	02_Track_02+67.007891+69.702902
+find_ok:num_txt=22	ST_jj=21	wer_str=0.000000	cmd_wer:./wer "this book is based on a famous play by william shakespeare" "this book is based on a famous play by william shakespeare"	03_Track_03+0.063719+3.653696
+find_ok:num_txt=23	ST_jj=22	wer_str=0.000000	cmd_wer:./wer "he wrote a midsummer night's dream over four hundred years ago to amuse noisy audiences" "he wrote a midsummer night's dream over four hundred years ago to amuse noisy audiences"	03_Track_03+3.653832+9.718821
+find_ok:num_txt=24	ST_jj=23	wer_str=0.016667	cmd_wer:./wer "they loved mix-ups and magic  and this story is full of both" "they loved mix-ups and magic and this story is full of both"	03_Track_03+9.718821+14.413787
+find_ok:num_txt=25	ST_jj=24	wer_str=0.000000	cmd_wer:./wer "chapter one" "chapter one"	03_Track_03+15.093605+16.618413
+find_ok:num_txt=26	ST_jj=25	wer_str=0.000000	cmd_wer:./wer "wedding belles" "wedding belles"	03_Track_03+16.618413+18.373424
+find_ok:num_txt=27	ST_jj=26	wer_str=0.000000	cmd_wer:./wer "theseus the duke of athens was very excited" "theseus the duke of athens was very excited"	03_Track_03+18.373605+22.103583
+find_ok:num_txt=28	ST_jj=27	wer_str=0.000000	cmd_wer:./wer "the queen of the amazons hippolyta had agreed to marry him" "the queen of the amazons hippolyta had agreed to marry him"	03_Track_03+22.103583+26.238594
+find_ok:num_txt=29	ST_jj=28	wer_str=0.000000	cmd_wer:./wer "squeezing her hand he grinned and ordered his servants to prepare for the wedding" "squeezing her hand he grinned and ordered his servants to prepare for the wedding"	03_Track_03+26.239002+31.339002
+find_ok:num_txt=30	ST_jj=29	wer_str=0.000000	cmd_wer:./wer "soon they were racing around the palace polishing furniture and floors until they shone" "soon they were racing around the palace polishing furniture and floors until they shone"	04_Track_04+0.000000+5.539592
+find_ok:num_txt=31	ST_jj=30	wer_str=0.000000	cmd_wer:./wer "in the kitchen the cook began creating a cake fit for a queen" "in the kitchen the cook began creating a cake fit for a queen"	04_Track_04+5.539728+10.099728
+find_ok:num_txt=32	ST_jj=31	wer_str=0.000000	cmd_wer:./wer "we shall hold the best party athens has ever seen theseus promised hippolyta" "we shall hold the best party athens has ever seen theseus promised hippolyta"	04_Track_04+10.559773+16.604762
+find_ok:num_txt=33	ST_jj=32	wer_str=0.000000	cmd_wer:./wer "just then an angry man burst into the great hall with three other people" "just then an angry man burst into the great hall with three other people"	04_Track_04+16.904626+21.964626
+find_ok:num_txt=34	ST_jj=32	wer_str=1.263158	cmd_wer:./wer "i must see duke theseus now he shouted" "i must see duke theseus now"	04_Track_04+21.964762+24.469751
+find_ok:num_txt=35	ST_jj=32	wer_str=1.451613	cmd_wer:./wer "is that you egeus asked theseus" "is that you egeus"	04_Track_04+25.584626+27.164626
+find_ok:num_txt=36	ST_jj=37	wer_str=0.000000	cmd_wer:./wer "whatever's wrong" "whatever's wrong"	04_Track_04+28.564762+29.859773
+find_ok:num_txt=37	ST_jj=38	wer_str=0.000000	cmd_wer:./wer "egeus gestured at a girl in a yellow dress" "egeus gestured at a girl in a yellow dress"	05_Track_05+0.000000+2.969116
+find_ok:num_txt=38	ST_jj=39	wer_str=0.000000	cmd_wer:./wer "it's my daughter hermia he explained" "it's my daughter hermia he explained"	05_Track_05+2.969887+5.944354
+find_ok:num_txt=39	ST_jj=40	wer_str=0.000000	cmd_wer:./wer "i want her to marry this man demetrius" "i want her to marry this man demetrius"	05_Track_05+5.944354+9.099365
+find_ok:num_txt=40	ST_jj=41	wer_str=0.000000	cmd_wer:./wer "a man in a blue tunic nodded to the duke" "a man in a blue tunic nodded to the duke"	05_Track_05+9.379229+12.424218
+find_ok:num_txt=41	ST_jj=42	wer_str=0.000000	cmd_wer:./wer "but hermia wants to marry lysander egeus went on" "but hermia wants to marry lysander egeus went on"	05_Track_05+12.574150+16.444127
+find_ok:num_txt=42	ST_jj=43	wer_str=0.000000	cmd_wer:./wer "you're in charge around here" "you're in charge around here"	05_Track_05+16.444490+18.124308
+find_ok:num_txt=43	ST_jj=44	wer_str=0.000000	cmd_wer:./wer "please tell her to marry demetrius" "please tell her to marry demetrius"	05_Track_05+18.124308+20.539320
+find_ok:num_txt=44	ST_jj=45	wer_str=0.000000	cmd_wer:./wer "theseus frowned at hermia" "theseus frowned at hermia"	05_Track_05+20.949388+23.239410
+find_ok:num_txt=45	ST_jj=46	wer_str=0.000000	cmd_wer:./wer "demetrius is a good man he pointed out and the law says daughters must obey their fathers" "demetrius is a good man he pointed out and the law says daughters must obey their fathers"	05_Track_05+23.239637+29.693968
+find_ok:num_txt=46	ST_jj=47	wer_str=0.000000	cmd_wer:./wer "at this lysander began to plead with the duke" "at this lysander began to plead with the duke"	05_Track_05+29.693968+33.348980
+find_ok:num_txt=47	ST_jj=48	wer_str=0.000000	cmd_wer:./wer "hermia doesn't love demetrius" "hermia doesn't love demetrius"	05_Track_05+33.349524+35.419546
+find_ok:num_txt=48	ST_jj=49	wer_str=0.000000	cmd_wer:./wer "she loves me" "she loves me"	05_Track_05+35.419637+36.474331
+find_ok:num_txt=49	ST_jj=50	wer_str=0.000000	cmd_wer:./wer "let me marry her" "let me marry her"	05_Track_05+36.474331+38.049342
+find_ok:num_txt=50	ST_jj=51	wer_str=0.000000	cmd_wer:./wer "theseus looked at the young man and shook his head" "theseus looked at the young man and shook his head"	06_Track_06+0.000000+2.852063
+find_ok:num_txt=51	ST_jj=51	wer_str=1.958333	cmd_wer:./wer "lysander he said sternly" "he said sternly"	06_Track_06+4.137596+5.502358
+find_ok:num_txt=52	ST_jj=54	wer_str=0.000000	cmd_wer:./wer "i'm sorry but hermia must marry demetrius" "i'm sorry but hermia must marry demetrius"	06_Track_06+5.502358+8.812200
+find_ok:num_txt=53	ST_jj=55	wer_str=0.000000	cmd_wer:./wer "it's what her father wants" "it's what her father wants"	06_Track_06+8.812200+10.542177
+find_ok:num_txt=54	ST_jj=56	wer_str=0.000000	cmd_wer:./wer "if she won't do as egeus tells her she'll have to become a nun" "if she won't do as egeus tells her she'll have to become a nun"	06_Track_06+10.542222+14.347211
+find_ok:num_txt=55	ST_jj=57	wer_str=0.000000	cmd_wer:./wer "lysander watched in fury as theseus left taking egeus and demetrius with him" "lysander watched in fury as theseus left taking egeus and demetrius with him"	06_Track_06+14.836644+20.901678
+find_ok:num_txt=56	ST_jj=58	wer_str=0.000000	cmd_wer:./wer "hermia was dismayed" "hermia was dismayed"	06_Track_06+20.901723+22.601723
+find_ok:num_txt=57	ST_jj=59	wer_str=0.000000	cmd_wer:./wer "i can't marry demetrius she cried" "i can't marry demetrius she cried"	06_Track_06+22.601950+25.727300
+find_ok:num_txt=58	ST_jj=60	wer_str=0.000000	cmd_wer:./wer "and i won't be a nun" "and i won't be a nun"	06_Track_06+25.727300+27.677143
+find_ok:num_txt=59	ST_jj=61	wer_str=0.000000	cmd_wer:./wer "don't cry" "don't cry"	06_Track_06+27.677143+28.957052
+find_ok:num_txt=60	ST_jj=62	wer_str=0.000000	cmd_wer:./wer "we'll leave athens" "we'll leave athens"	06_Track_06+28.957052+30.421995
+find_ok:num_txt=61	ST_jj=63	wer_str=0.000000	cmd_wer:./wer "i'll meet you in the forest tonight and we'll run away said lysander trying to comfort her" "i'll meet you in the forest tonight and we'll run away said lysander trying to comfort her"	06_Track_06+30.421995+36.021995
+find_ok:num_txt=62	ST_jj=63	wer_str=1.488372	cmd_wer:./wer "run away said a sad voice interrupting them" "said a sad voice interrupting them"	07_Track_07+1.239683+3.629524
+find_ok:num_txt=63	ST_jj=66	wer_str=0.000000	cmd_wer:./wer "who's running away" "who's running away"	07_Track_07+3.629524+5.279546
+find_ok:num_txt=64	ST_jj=67	wer_str=0.000000	cmd_wer:./wer "it was hermia's best friend helena" "it was hermia's best friend helena"	07_Track_07+5.279683+7.939184
+find_ok:num_txt=65	ST_jj=68	wer_str=0.000000	cmd_wer:./wer "quickly lysander told her their problem" "quickly lysander told her their problem"	07_Track_07+7.939184+11.064172
+find_ok:num_txt=66	ST_jj=69	wer_str=0.000000	cmd_wer:./wer "helena sighed" "helena sighed"	07_Track_07+11.064308+12.919274
+find_ok:num_txt=67	ST_jj=70	wer_str=0.000000	cmd_wer:./wer "i wish demetrius loved me the way you love hermia" "i wish demetrius loved me the way you love hermia"	07_Track_07+12.919274+16.809252
+find_ok:num_txt=68	ST_jj=71	wer_str=0.000000	cmd_wer:./wer "poor helena said lysander" "poor helena said lysander"	07_Track_07+16.809297+19.899093
+find_ok:num_txt=69	ST_jj=72	wer_str=0.000000	cmd_wer:./wer "we do too" "we do too"	07_Track_07+19.899093+21.424082
+find_ok:num_txt=70	ST_jj=73	wer_str=0.000000	cmd_wer:./wer "but we can't hang around he went on" "but we can't hang around he went on"	07_Track_07+21.424490+24.074150
+find_ok:num_txt=71	ST_jj=74	wer_str=0.000000	cmd_wer:./wer "come on hermia we must pack" "come on hermia we must pack"	07_Track_07+24.074150+26.464172
+find_ok:num_txt=72	ST_jj=74	wer_str=0.933333	cmd_wer:./wer "we're leaving athens tonight hermia whispered on her way out" "we're leaving athens tonight hermia whispered on her way_out"	07_Track_07+26.464762+31.214150
+find_ok:num_txt=73	ST_jj=76	wer_str=0.000000	cmd_wer:./wer "left alone helena felt tears pricking her eyes" "left alone helena felt tears pricking her eyes"	07_Track_07+31.214150+35.339184
+find_ok:num_txt=74	ST_jj=76	wer_str=0.923077	cmd_wer:./wer "it's so unfair she thought" "it's so unfair"	07_Track_07+35.339728+37.413400
+find_ok:num_txt=75	ST_jj=79	wer_str=0.000000	cmd_wer:./wer "demetrius loved me before he met hermia" "demetrius loved me before he met hermia"	07_Track_07+38.554331+41.804354
+find_ok:num_txt=76	ST_jj=80	wer_str=0.000000	cmd_wer:./wer "around her the palace was full of noisy wedding preparations" "around her the palace was full of noisy wedding preparations"	07_Track_07+42.674240+47.129252
+find_ok:num_txt=77	ST_jj=81	wer_str=0.000000	cmd_wer:./wer "the bustle made helena feel worse" "the bustle made helena feel worse"	07_Track_07+47.129342+49.549342
+find_ok:num_txt=78	ST_jj=82	wer_str=0.000000	cmd_wer:./wer "i'll tell demetrius that hermia is running away she decided" "i'll tell demetrius that hermia is running away she decided"	07_Track_07+49.549388+53.974150
+find_ok:num_txt=79	ST_jj=83	wer_str=0.000000	cmd_wer:./wer "perhaps then he'll choose me" "perhaps then he'll choose me"	07_Track_07+53.974150+56.394150
+find_ok:num_txt=80	ST_jj=84	wer_str=0.000000	cmd_wer:./wer "chapter two" "chapter two"	08_Track_08+0.000000+1.198186
+find_ok:num_txt=81	ST_jj=85	wer_str=0.000000	cmd_wer:./wer "putting on a play" "putting on a play"	08_Track_08+1.198186+3.103175
+find_ok:num_txt=82	ST_jj=86	wer_str=0.000000	cmd_wer:./wer "over at the house of peter quince a craftsman things were almost as noisy" "over at the house of peter quince a craftsman things were almost as noisy"	08_Track_08+3.613515+9.018549
+find_ok:num_txt=83	ST_jj=87	wer_str=0.000000	cmd_wer:./wer "he had decided to put on a play for the duke's wedding and asked five of his friends to help" "he had decided to put on a play for the duke's wedding and asked five of his friends to help"	08_Track_08+9.018639+14.888435
+find_ok:num_txt=84	ST_jj=87	wer_str=1.655172	cmd_wer:./wer "are we all here quince called" "are we all here"	08_Track_08+14.888435+16.388435
+find_ok:num_txt=85	ST_jj=90	wer_str=0.000000	cmd_wer:./wer "nick bottom" "nick bottom"	08_Track_08+17.803401+19.048345
+find_ok:num_txt=86	ST_jj=91	wer_str=0.000000	cmd_wer:./wer "here" "here"	08_Track_08+19.048345+20.008345
+find_ok:num_txt=87	ST_jj=92	wer_str=0.000000	cmd_wer:./wer "francis flute" "francis flute"	08_Track_08+20.008617+21.643492
+find_ok:num_txt=88	ST_jj=93	wer_str=0.000000	cmd_wer:./wer "here" "here"	08_Track_08+21.643492+22.633379
+find_ok:num_txt=89	ST_jj=94	wer_str=0.000000	cmd_wer:./wer "robin starveling" "robin starveling"	08_Track_08+22.633379+24.318413
+find_ok:num_txt=90	ST_jj=95	wer_str=0.000000	cmd_wer:./wer "here" "here"	08_Track_08+24.318458+25.348435
+find_ok:num_txt=91	ST_jj=96	wer_str=0.000000	cmd_wer:./wer "tom snout" "tom snout"	08_Track_08+25.348571+26.818458
+find_ok:num_txt=92	ST_jj=97	wer_str=0.000000	cmd_wer:./wer "here" "here"	08_Track_08+26.818458+27.623220
+find_ok:num_txt=93	ST_jj=98	wer_str=0.000000	cmd_wer:./wer "snug" "snug"	08_Track_08+27.623220+29.103220
+find_ok:num_txt=94	ST_jj=99	wer_str=0.000000	cmd_wer:./wer "here" "here"	08_Track_08+29.103492+30.043492
+find_ok:num_txt=95	ST_jj=100	wer_str=0.000000	cmd_wer:./wer "the play i've chosen quince announced is the sad sad story of pyramus and thisbe" "the play i've chosen quince announced is the sad sad story of pyramus and thisbe"	09_Track_09+0.000000+6.391066
+find_ok:num_txt=96	ST_jj=101	wer_str=0.000000	cmd_wer:./wer "bottom wasn't listening" "bottom wasn't listening"	09_Track_09+6.391066+7.891020
+find_ok:num_txt=97	ST_jj=102	wer_str=0.000000	cmd_wer:./wer "oh good he said" "oh good he said"	09_Track_09+7.891020+9.456009
+find_ok:num_txt=98	ST_jj=103	wer_str=0.000000	cmd_wer:./wer "i like a comedy" "i like a comedy"	09_Track_09+9.456327+10.611066
+find_ok:num_txt=99	ST_jj=104	wer_str=0.000000	cmd_wer:./wer "who am i" "who am i"	09_Track_09+10.611066+11.801043
+find_ok:num_txt=100	ST_jj=105	wer_str=0.000000	cmd_wer:./wer "you'll be pyramus quince told him" "you'll be pyramus quince told him"	09_Track_09+11.801361+14.636327
+find_ok:num_txt=101	ST_jj=106	wer_str=0.000000	cmd_wer:./wer "a young man in love with the beautiful thisbe" "a young man in love with the beautiful thisbe"	09_Track_09+14.636327+17.866259
+find_ok:num_txt=102	ST_jj=107	wer_str=0.000000	cmd_wer:./wer "bottom looked pleased" "bottom looked pleased"	09_Track_09+17.866259+19.571247
+find_ok:num_txt=103	ST_jj=108	wer_str=0.000000	cmd_wer:./wer "i'll make a brilliant pyramus" "i'll make a brilliant pyramus"	09_Track_09+19.571383+21.685986
+find_ok:num_txt=104	ST_jj=109	wer_str=0.000000	cmd_wer:./wer "and flute is to be thisbe quince went on" "and flute is to be thisbe quince went on"	09_Track_09+21.685986+24.880952
+find_ok:num_txt=105	ST_jj=110	wer_str=0.000000	cmd_wer:./wer "flute looked horrified" "flute looked horrified"	09_Track_09+24.881315+26.920998
+find_ok:num_txt=106	ST_jj=111	wer_str=0.000000	cmd_wer:./wer "a girl" "a girl"	09_Track_09+26.920998+28.096000
+find_ok:num_txt=107	ST_jj=112	wer_str=0.000000	cmd_wer:./wer "i can't be a girl" "i can't be a girl"	09_Track_09+28.096000+29.568500
+find_ok:num_txt=108	ST_jj=112	wer_str=3.593750	cmd_wer:./wer "i'm i'm growing  a beard he said" "i'm i'm growing a beard he said"	09_Track_09+29.568500+32.526259
+find_ok:num_txt=109	ST_jj=114	wer_str=0.000000	cmd_wer:./wer "and it means i'll have to kiss bottom" "and it means i'll have to kiss bottom"	09_Track_09+33.216735+36.177300
+find_ok:num_txt=110	ST_jj=114	wer_str=0.923077	cmd_wer:./wer "oh i could be thisbe too bottom offered" "i could be thisbe too bottom offered"	09_Track_09+37.111791+39.856825
+find_ok:num_txt=111	ST_jj=117	wer_str=0.000000	cmd_wer:./wer "i'll speak low for the man he growled and high for the girl he finished with a squeak" "i'll speak low for the man he growled and high for the girl he finished with a squeak"	09_Track_09+39.856871+46.341859
+find_ok:num_txt=112	ST_jj=118	wer_str=0.000000	cmd_wer:./wer "flute is thisbe said quince firmly" "flute is thisbe said quince firmly"	10_Track_10+0.195601+3.195601
+find_ok:num_txt=113	ST_jj=119	wer_str=0.000000	cmd_wer:./wer "he can wear a mask" "he can wear a mask"	10_Track_10+3.195964+4.630703
+find_ok:num_txt=114	ST_jj=120	wer_str=0.000000	cmd_wer:./wer "starveling is the moon snout is a wall and snug is a lion" "starveling is the moon snout is a wall and snug is a lion"	10_Track_10+4.630703+9.130703
+find_ok:num_txt=115	ST_jj=121	wer_str=0.000000	cmd_wer:./wer "bottom hopped up and down with excitement" "bottom hopped up and down with excitement"	10_Track_10+9.131156+11.602100
+find_ok:num_txt=116	ST_jj=121	wer_str=0.960784	cmd_wer:./wer "oh let me be the lion he cried giving a fierce roar" "let me be the lion he cried giving a fierce roar"	10_Track_10+12.317900+16.117642
+find_ok:num_txt=117	ST_jj=124	wer_str=0.000000	cmd_wer:./wer "quince jumped in surprise" "quince jumped in surprise"	10_Track_10+17.429615+19.611020
+find_ok:num_txt=118	ST_jj=125	wer_str=0.000000	cmd_wer:./wer "you'd scare the audience away he said" "you'd scare the audience away he said"	10_Track_10+19.611156+22.166122
+find_ok:num_txt=119	ST_jj=126	wer_str=0.000000	cmd_wer:./wer "here are your words quince added handing out pieces of paper" "here are your words quince added handing out pieces of paper"	10_Track_10+22.166122+26.291156
+find_ok:num_txt=120	ST_jj=127	wer_str=0.000000	cmd_wer:./wer "learn them quickly" "learn them quickly"	10_Track_10+26.291202+27.525850
+find_ok:num_txt=121	ST_jj=128	wer_str=0.000000	cmd_wer:./wer "we'll meet tonight in the forest to rehearse" "we'll meet tonight in the forest to rehearse"	10_Track_10+27.525850+30.440862
+find_ok:num_txt=122	ST_jj=129	wer_str=0.000000	cmd_wer:./wer "chapter three" "chapter three"	11_Track_11+0.000000+1.258231
+find_ok:num_txt=123	ST_jj=130	wer_str=0.000000	cmd_wer:./wer "a fairy fight" "a fairy fight"	11_Track_11+1.258322+3.113061
+find_ok:num_txt=124	ST_jj=130	wer_str=1.000000	cmd_wer:./wer "later that evening deep in the forest oberon - king of the fairies - was in the middle of a fight with his dazzling queen titania" "later that evening deep in the forest oberon king of the fairies was in the middle of a fight with his dazzling queen titania"	11_Track_11+3.113061+11.723039
+find_ok:num_txt=125	ST_jj=132	wer_str=0.000000	cmd_wer:./wer "they were arguing over one of titania's servants" "they were arguing over one of titania's servants"	11_Track_11+11.723492+15.082993
+find_ok:num_txt=126	ST_jj=133	wer_str=0.000000	cmd_wer:./wer "you should give him to me oberon declared" "you should give him to me oberon declared"	11_Track_11+15.082993+18.188027
+find_ok:num_txt=127	ST_jj=134	wer_str=0.000000	cmd_wer:./wer "he followed titania as she walked through the forest nagging her until the queen's head ached" "he followed titania as she walked through the forest nagging her until the queen's head ached"	11_Track_11+18.188390+23.858005
+find_ok:num_txt=128	ST_jj=135	wer_str=0.000000	cmd_wer:./wer "i want a page to carry my cloak" "i want a page to carry my cloak"	11_Track_11+23.858005+26.518005
+find_ok:num_txt=129	ST_jj=136	wer_str=0.000000	cmd_wer:./wer "titania turned away her hair glowing gold in the moonlight" "titania turned away her hair glowing gold in the moonlight"	12_Track_12+0.000000+3.821769
+find_ok:num_txt=130	ST_jj=137	wer_str=0.000000	cmd_wer:./wer "oberon stop it she said" "oberon stop it she said"	12_Track_12+3.821769+6.221769
+find_ok:num_txt=131	ST_jj=138	wer_str=0.000000	cmd_wer:./wer "he's my page and i'm keeping him" "he's my page and i'm keeping him"	12_Track_12+6.221814+8.746848
+find_ok:num_txt=132	ST_jj=139	wer_str=0.000000	cmd_wer:./wer "she waved a pale hand and four fairies appeared" "she waved a pale hand and four fairies appeared"	12_Track_12+8.746848+12.501678
+find_ok:num_txt=133	ST_jj=139	wer_str=2.562500	cmd_wer:./wer "come she ordered" "she ordered"	12_Track_12+13.392063+14.226939
+find_ok:num_txt=134	ST_jj=142	wer_str=0.000000	cmd_wer:./wer "we're leaving" "we're leaving"	12_Track_12+14.226939+15.646803
+find_ok:num_txt=135	ST_jj=143	wer_str=0.000000	cmd_wer:./wer "oberon frowned" "oberon frowned"	12_Track_12+15.646803+17.466803
+find_ok:num_txt=136	ST_jj=144	wer_str=0.000000	cmd_wer:./wer "titania had plenty of fairies to serve her and he needed a page boy" "titania had plenty of fairies to serve her and he needed a page boy"	12_Track_12+17.466939+22.186893
+find_ok:num_txt=137	ST_jj=145	wer_str=0.000000	cmd_wer:./wer "grumpily he sat on a tree stump and wondered what to do" "grumpily he sat on a tree stump and wondered what to do"	12_Track_12+22.186893+26.591882
+find_ok:num_txt=138	ST_jj=146	wer_str=0.000000	cmd_wer:./wer "after a moment his face cleared" "after a moment his face cleared"	12_Track_12+26.591927+29.501633
+find_ok:num_txt=139	ST_jj=147	wer_str=0.000000	cmd_wer:./wer "i need help he realized" "i need help he realized"	12_Track_12+29.501633+31.956644
+find_ok:num_txt=140	ST_jj=148	wer_str=0.000000	cmd_wer:./wer "where's puck" "where's puck"	12_Track_12+31.956644+33.271655
+find_ok:num_txt=141	ST_jj=149	wer_str=0.000000	cmd_wer:./wer "puck" "puck"	12_Track_12+33.271837+34.386667
+find_ok:num_txt=142	ST_jj=150	wer_str=0.000000	cmd_wer:./wer "in a flash his jester puck hovered before him" "in a flash his jester puck hovered before him"	12_Track_12+34.386667+38.121633
+find_ok:num_txt=143	ST_jj=151	wer_str=0.000000	cmd_wer:./wer "puck was the most mischievous fairy of all" "puck was the most mischievous fairy of all"	12_Track_12+38.121769+41.251791
+find_ok:num_txt=144	ST_jj=152	wer_str=0.000000	cmd_wer:./wer "i want to trick titania oberon explained" "i want to trick titania oberon explained"	13_Track_13+0.000000+3.382494
+find_ok:num_txt=145	ST_jj=153	wer_str=0.000000	cmd_wer:./wer "i'm going to make her fall in love with the first thing she sees even if it's a monkey" "i'm going to make her fall in love with the first thing she sees even if it's a monkey"	13_Track_13+3.382494+8.742358
+find_ok:num_txt=146	ST_jj=154	wer_str=0.000000	cmd_wer:./wer "puck chuckled" "puck chuckled"	13_Track_13+8.742358+10.177279
+find_ok:num_txt=147	ST_jj=155	wer_str=0.000000	cmd_wer:./wer "that's the best spell i ever heard" "that's the best spell i ever heard"	13_Track_13+10.177279+12.717279
+find_ok:num_txt=148	ST_jj=156	wer_str=0.000000	cmd_wer:./wer "but i need a magic herb oberon said" "but i need a magic herb oberon said"	13_Track_13+12.717551+16.022222
+find_ok:num_txt=149	ST_jj=157	wer_str=0.000000	cmd_wer:./wer "can you find it for me as quick as you can" "can you find it for me as quick as you can"	13_Track_13+16.022222+18.392200
+find_ok:num_txt=150	ST_jj=158	wer_str=0.000000	cmd_wer:./wer "i'll search around the earth in forty minutes" "i'll search around the earth in forty minutes"	13_Track_13+18.392698+22.252426
+find_ok:num_txt=151	ST_jj=159	wer_str=0.000000	cmd_wer:./wer "as puck flew into the starry night oberon heard voices" "as puck flew into the starry night oberon heard voices"	13_Track_13+22.252426+26.837279
+find_ok:num_txt=152	ST_jj=160	wer_str=0.000000	cmd_wer:./wer "silently he slipped behind a tree" "silently he slipped behind a tree"	13_Track_13+26.837279+29.792245
+find_ok:num_txt=153	ST_jj=161	wer_str=0.000000	cmd_wer:./wer "it was demetrius looking for hermia with helena close behind" "it was demetrius looking for hermia with helena close behind"	13_Track_13+29.792336+34.407347
+find_ok:num_txt=154	ST_jj=162	wer_str=0.000000	cmd_wer:./wer "i don't love you anymore so stop following me he snapped" "i don't love you anymore so stop following me he snapped"	13_Track_13+34.407574+38.807347
+find_ok:num_txt=155	ST_jj=163	wer_str=0.000000	cmd_wer:./wer "but helena couldn't leave him alone" "but helena couldn't leave him alone"	13_Track_13+38.807347+41.092336
+find_ok:num_txt=156	ST_jj=164	wer_str=0.000000	cmd_wer:./wer "it makes me sick to look at you" "it makes me sick to look at you"	13_Track_13+41.092336+43.697370
+find_ok:num_txt=157	ST_jj=165	wer_str=0.000000	cmd_wer:./wer "it makes me sick not to look at you" "it makes me sick not to look at you"	13_Track_13+43.697506+46.992472
+find_ok:num_txt=158	ST_jj=166	wer_str=0.000000	cmd_wer:./wer "oberon gazed upon helena with pity" "oberon gazed upon helena with pity"	14_Track_14+0.000000+2.583311
+find_ok:num_txt=159	ST_jj=167	wer_str=0.000000	cmd_wer:./wer "don't be unhappy he murmured" "don't be unhappy he murmured"	14_Track_14+2.583311+5.108163
+find_ok:num_txt=160	ST_jj=168	wer_str=0.000000	cmd_wer:./wer "before the night is out that man will love you" "before the night is out that man will love you"	14_Track_14+5.108163+8.463129
+find_ok:num_txt=161	ST_jj=169	wer_str=0.000000	cmd_wer:./wer "he looked up as puck returned clutching the herb" "he looked up as puck returned clutching the herb"	14_Track_14+8.463129+11.998141
+find_ok:num_txt=162	ST_jj=169	wer_str=0.914286	cmd_wer:./wer "you found it cried oberon with glee" "cried oberon with glee"	14_Track_14+13.278277+14.848118
+find_ok:num_txt=163	ST_jj=172	wer_str=0.000000	cmd_wer:./wer "i want you to use some of it too he said telling puck of his plans for demetrius and helena" "i want you to use some of it too he said telling puck of his plans for demetrius and helena"	14_Track_14+14.848118+20.803129
+find_ok:num_txt=164	ST_jj=173	wer_str=0.000000	cmd_wer:./wer "leaving puck to search for demetrius oberon sped off to his queen" "leaving puck to search for demetrius oberon sped off to his queen"	14_Track_14+20.803265+25.548254
+find_ok:num_txt=165	ST_jj=174	wer_str=0.000000	cmd_wer:./wer "he found her lying on a bed of violets with her fairies singing a lullaby" "he found her lying on a bed of violets with her fairies singing a lullaby"	14_Track_14+25.548299+30.158231
+find_ok:num_txt=166	ST_jj=175	wer_str=0.000000	cmd_wer:./wer "the scent of herbs filled the air sweetening their magical song" "the scent of herbs filled the air sweetening their magical song"	14_Track_14+30.158231+34.913197
+find_ok:num_txt=167	ST_jj=176	wer_str=0.000000	cmd_wer:./wer "oberon waited for the fairies to leave before gently rubbing the magic herb on titania's eyes" "oberon waited for the fairies to leave before gently rubbing the magic herb on titania's eyes"	15_Track_15+0.000000+6.082404
+find_ok:num_txt=168	ST_jj=177	wer_str=0.000000	cmd_wer:./wer "what you see when you awake you will for your true love take" "what you see when you awake you will for your true love take"	15_Track_15+6.082721+11.547483
+find_ok:num_txt=169	ST_jj=178	wer_str=0.000000	cmd_wer:./wer "meanwhile puck had found a sleeping couple but he'd made a mistake" "meanwhile puck had found a sleeping couple but he'd made a mistake"	15_Track_15+11.547483+16.252517
+find_ok:num_txt=170	ST_jj=179	wer_str=0.000000	cmd_wer:./wer "he didn't enchant demetrius at all" "he didn't enchant demetrius at all"	15_Track_15+16.252698+18.782676
+find_ok:num_txt=171	ST_jj=180	wer_str=0.000000	cmd_wer:./wer "he enchanted lysander" "he enchanted lysander"	15_Track_15+18.782676+21.272698
+find_ok:num_txt=172	ST_jj=181	wer_str=0.000000	cmd_wer:./wer "chapter four" "chapter four"	15_Track_15+22.016644+23.636417
+find_ok:num_txt=173	ST_jj=182	wer_str=0.000000	cmd_wer:./wer "puck's tricks" "puck's tricks"	15_Track_15+23.636417+25.271383
+find_ok:num_txt=174	ST_jj=183	wer_str=0.000000	cmd_wer:./wer "not long after puck cast his spell demetrius and helena came past" "not long after puck cast his spell demetrius and helena came past"	15_Track_15+25.271610+29.961633
+find_ok:num_txt=175	ST_jj=184	wer_str=0.000000	cmd_wer:./wer "demetrius was still determined to lose helena" "demetrius was still determined to lose helena"	15_Track_15+29.961723+33.216689
+find_ok:num_txt=176	ST_jj=185	wer_str=0.000000	cmd_wer:./wer "leaping over tangled tree roots he raced away from her" "leaping over tangled tree roots he raced away from her"	16_Track_16+0.000000+3.713016
+find_ok:num_txt=177	ST_jj=186	wer_str=0.000000	cmd_wer:./wer "helena sunk in gloom stopped and noticed lysander fast asleep" "helena sunk in gloom stopped and noticed lysander fast asleep"	16_Track_16+3.713016+9.932834
+find_ok:num_txt=178	ST_jj=186	wer_str=1.000000	cmd_wer:./wer "lysander she began" "she began"	16_Track_16+11.198005+12.587891
+find_ok:num_txt=179	ST_jj=189	wer_str=0.000000	cmd_wer:./wer "lysander awoke and gasped with delight" "lysander awoke and gasped with delight"	16_Track_16+12.587891+15.326700
+find_ok:num_txt=180	ST_jj=190	wer_str=0.000000	cmd_wer:./wer "sweet helena he cried" "sweet helena he cried"	16_Track_16+15.326700+17.707982
+find_ok:num_txt=181	ST_jj=191	wer_str=0.000000	cmd_wer:./wer "i love you" "i love you"	16_Track_16+17.708073+19.437823
+find_ok:num_txt=182	ST_jj=192	wer_str=0.000000	cmd_wer:./wer "helena was shocked" "helena was shocked"	16_Track_16+19.437823+21.137823
+find_ok:num_txt=183	ST_jj=192	wer_str=3.500000	cmd_wer:./wer "you can't she said" "you can't"	16_Track_16+21.138141+22.397914
+find_ok:num_txt=184	ST_jj=195	wer_str=0.000000	cmd_wer:./wer "you love hermia" "you love hermia"	16_Track_16+23.428299+24.928299
+find_ok:num_txt=185	ST_jj=196	wer_str=0.000000	cmd_wer:./wer "forget hermia said lysander" "forget hermia said lysander"	16_Track_16+24.928345+28.623356
+find_ok:num_txt=186	ST_jj=197	wer_str=0.000000	cmd_wer:./wer "stop teasing helena snapped" "stop teasing helena snapped"	16_Track_16+28.623356+31.328027
+find_ok:num_txt=187	ST_jj=198	wer_str=0.000000	cmd_wer:./wer "if you're going to be silly i'm leaving" "if you're going to be silly i'm leaving"	16_Track_16+31.328027+33.878005
+find_ok:num_txt=188	ST_jj=199	wer_str=0.000000	cmd_wer:./wer "and she left" "and she left"	16_Track_16+33.878186+35.462993
+find_ok:num_txt=189	ST_jj=200	wer_str=0.000000	cmd_wer:./wer "lysander turned to the sleeping hermia" "lysander turned to the sleeping hermia"	16_Track_16+35.462993+38.527982
+find_ok:num_txt=190	ST_jj=201	wer_str=0.000000	cmd_wer:./wer "stay there for all i care he hissed" "stay there for all i care he hissed"	16_Track_16+38.528662+41.458141
+find_ok:num_txt=191	ST_jj=202	wer_str=0.000000	cmd_wer:./wer "i'm following helena" "i'm following helena"	16_Track_16+41.458141+43.493152
+find_ok:num_txt=192	ST_jj=203	wer_str=0.000000	cmd_wer:./wer "when hermia woke a moment later she was alone" "when hermia woke a moment later she was alone"	16_Track_16+43.493333+47.838231
+find_ok:num_txt=193	ST_jj=203	wer_str=2.052632	cmd_wer:./wer "lysander she called" "she called"	16_Track_16+49.283220+50.648163
+find_ok:num_txt=194	ST_jj=206	wer_str=0.000000	cmd_wer:./wer "where are you" "where are you"	16_Track_16+50.648163+51.833152
+find_ok:num_txt=195	ST_jj=207	wer_str=0.000000	cmd_wer:./wer "what's happened" "what's happened"	16_Track_16+51.833197+53.233197
+find_ok:num_txt=196	ST_jj=208	wer_str=0.000000	cmd_wer:./wer "scrambling to her feet she went to look for him" "scrambling to her feet she went to look for him"	16_Track_16+53.233379+56.758367
+find_ok:num_txt=197	ST_jj=209	wer_str=0.000000	cmd_wer:./wer "puck had no idea of the trouble he'd caused" "puck had no idea of the trouble he'd caused"	17_Track_17+0.000000+2.761224
+find_ok:num_txt=198	ST_jj=210	wer_str=0.000000	cmd_wer:./wer "he was flying deeper into the woods looking for fun" "he was flying deeper into the woods looking for fun"	17_Track_17+2.761224+6.136236
+find_ok:num_txt=199	ST_jj=211	wer_str=0.000000	cmd_wer:./wer "and who should he run into but peter quince rehearsing with his friends" "and who should he run into but peter quince rehearsing with his friends"	17_Track_17+6.136281+11.121088
+find_ok:num_txt=200	ST_jj=211	wer_str=2.105263	cmd_wer:./wer "a play puck thought" "puck thought"	17_Track_17+12.276190+13.276190
+find_ok:num_txt=201	ST_jj=214	wer_str=0.000000	cmd_wer:./wer "i think i'll watch and maybe i'll join in" "i think i'll watch and maybe i'll join in"	17_Track_17+13.276463+17.156372
+find_ok:num_txt=202	ST_jj=215	wer_str=0.000000	cmd_wer:./wer "bottom was worried" "bottom was worried"	17_Track_17+17.156372+19.186032
+find_ok:num_txt=203	ST_jj=216	wer_str=0.000000	cmd_wer:./wer "this play's too scary he said" "this play's too scary he said"	17_Track_17+19.186032+22.400952
+find_ok:num_txt=204	ST_jj=217	wer_str=0.000000	cmd_wer:./wer "especially the lion snout agreed" "especially the lion snout agreed"	17_Track_17+22.400952+25.285941
+find_ok:num_txt=205	ST_jj=218	wer_str=0.000000	cmd_wer:./wer "i think we should leave out the scary parts" "i think we should leave out the scary parts"	17_Track_17+25.286122+28.186122
+find_ok:num_txt=206	ST_jj=219	wer_str=0.000000	cmd_wer:./wer "i know" "i know"	17_Track_17+28.186395+29.321406
+find_ok:num_txt=207	ST_jj=220	wer_str=0.000000	cmd_wer:./wer "we'll tell the audience it's just pretend" "we'll tell the audience it's just pretend"	17_Track_17+29.321542+32.346531
+find_ok:num_txt=208	ST_jj=221	wer_str=0.000000	cmd_wer:./wer "bottom stepped into the middle of a clearing and waved his arms" "bottom stepped into the middle of a clearing and waved his arms"	18_Track_18+0.000000+3.508500
+find_ok:num_txt=209	ST_jj=222	wer_str=0.000000	cmd_wer:./wer "this can be our stage he said and the play began" "this can be our stage he said and the play began"	18_Track_18+3.508500+7.830748
+find_ok:num_txt=210	ST_jj=222	wer_str=0.917355	cmd_wer:./wer "as puck watched a brilliant idea popped into his head when bottom finished his speech and left the clearing puck followed" "when bottom finished his speech and left the clearing puck followed"	18_Track_18+11.950567+16.745578
+find_ok:num_txt=211	ST_jj=225	wer_str=0.000000	cmd_wer:./wer "the play went on until flute acting thisbe called for pyramus" "the play went on until flute acting thisbe called for pyramus"	18_Track_18+16.745714+22.274600
+find_ok:num_txt=212	ST_jj=225	wer_str=0.949153	cmd_wer:./wer "fair thisbe i'm yours shouted bottom crashing around a bush" "shouted bottom crashing around a bush"	18_Track_18+25.045986+27.680998
+find_ok:num_txt=213	ST_jj=228	wer_str=0.000000	cmd_wer:./wer "flute took one look at him and screamed" "flute took one look at him and screamed"	18_Track_18+27.681134+30.904800
+find_ok:num_txt=214	ST_jj=229	wer_str=0.000000	cmd_wer:./wer "a monster" "a monster"	18_Track_18+30.904800+32.354830
+find_ok:num_txt=215	ST_jj=230	wer_str=0.000000	cmd_wer:./wer "puck had given bottom a donkey's head" "puck had given bottom a donkey's head"	18_Track_18+32.355828+35.900816
+find_ok:num_txt=216	ST_jj=230	wer_str=0.923077	cmd_wer:./wer "what's the matter asked bottom who didn't know about puck's spell" "asked bottom who didn't know about puck's spell"	19_Track_19+1.366939+4.391100
+find_ok:num_txt=217	ST_jj=230	wer_str=0.978723	cmd_wer:./wer "help flute screamed again and everyone ran away" "flute screamed again and everyone ran away"	19_Track_19+5.427528+8.383100
+find_ok:num_txt=218	ST_jj=230	wer_str=0.975000	cmd_wer:./wer "stop teasing me bottom called after them" "bottom called after them"	19_Track_19+10.426848+11.896000
+find_ok:num_txt=219	ST_jj=237	wer_str=0.000000	cmd_wer:./wer "he began to walk up and down singing loudly to himself to show he didn't care" "he began to walk up and down singing loudly to himself to show he didn't care"	19_Track_19+11.896000+17.637052
+find_ok:num_txt=220	ST_jj=238	wer_str=0.000000	cmd_wer:./wer "bottom's awful singing woke titania who took one look at his floppy furry ears and fell in love" "bottom's awful singing woke titania who took one look at his floppy furry ears and fell in love"	19_Track_19+17.637052+24.987029
+find_ok:num_txt=221	ST_jj=238	wer_str=1.314286	cmd_wer:./wer "whose angel voice is that she asked" "whose angel voice is that"	19_Track_19+24.987075+27.561814
+find_ok:num_txt=222	ST_jj=241	wer_str=0.000000	cmd_wer:./wer "sing again o wise beautiful creature" "sing again o wise beautiful creature"	19_Track_19+28.621950+32.571927
+find_ok:num_txt=223	ST_jj=242	wer_str=0.000000	cmd_wer:./wer "summoning her fairies she told them to feed him dewberries and sweet ripe apricots" "summoning her fairies she told them to feed him dewberries and sweet ripe apricots"	19_Track_19+32.572018+38.586984
+find_ok:num_txt=224	ST_jj=243	wer_str=0.000000	cmd_wer:./wer "and shield his eyes from the moon with your butterfly wings she said" "and shield his eyes from the moon with your butterfly wings she said"	19_Track_19+38.586984+43.541995
+find_ok:num_txt=225	ST_jj=244	wer_str=0.000000	cmd_wer:./wer "titania stroked bottom's velvety nose" "titania stroked bottom's velvety nose"	20_Track_20+0.000000+3.208027
+find_ok:num_txt=226	ST_jj=245	wer_str=0.000000	cmd_wer:./wer "i'll take good care of you she promised kissing his fuzzy cheek" "i'll take good care of you she promised kissing his fuzzy cheek"	20_Track_20+3.208027+8.112880
+find_ok:num_txt=227	ST_jj=246	wer_str=0.000000	cmd_wer:./wer "puck peeked through some leaves at them and giggled" "puck peeked through some leaves at them and giggled"	20_Track_20+8.112880+11.142857
+find_ok:num_txt=228	ST_jj=247	wer_str=0.000000	cmd_wer:./wer "springing up he flew off to tell oberon of his trick" "springing up he flew off to tell oberon of his trick"	20_Track_20+11.143265+14.993288
+find_ok:num_txt=229	ST_jj=248	wer_str=0.000000	cmd_wer:./wer "chapter five" "chapter five"	21_Track_21+0.000000+1.568798
+find_ok:num_txt=230	ST_jj=249	wer_str=0.000000	cmd_wer:./wer "who loves who" "who loves who"	21_Track_21+1.569070+3.589070
+find_ok:num_txt=231	ST_jj=250	wer_str=0.000000	cmd_wer:./wer "a donkey" "a donkey"	21_Track_21+3.589252+5.224036
+find_ok:num_txt=232	ST_jj=251	wer_str=0.000000	cmd_wer:./wer "that's better than i'd hoped said oberon in delight" "that's better than i'd hoped said oberon in delight"	21_Track_21+5.224036+8.888844
+find_ok:num_txt=233	ST_jj=252	wer_str=0.000000	cmd_wer:./wer "just then they heard a shout" "just then they heard a shout"	21_Track_21+8.888844+11.338866
+find_ok:num_txt=234	ST_jj=253	wer_str=0.000000	cmd_wer:./wer "hermia who was still looking for lysander had found demetrius" "hermia who was still looking for lysander had found demetrius"	21_Track_21+11.339184+16.153741
+find_ok:num_txt=235	ST_jj=254	wer_str=0.000000	cmd_wer:./wer "did you enchant him as i asked" "did you enchant him as i asked"	21_Track_21+16.153741+18.333515
+find_ok:num_txt=236	ST_jj=255	wer_str=0.000000	cmd_wer:./wer "oberon whispered to puck" "oberon whispered to puck"	21_Track_21+18.333515+20.078549
+find_ok:num_txt=237	ST_jj=256	wer_str=0.000000	cmd_wer:./wer "that man" "that man"	21_Track_21+20.078866+21.098821
+find_ok:num_txt=238	ST_jj=257	wer_str=0.000000	cmd_wer:./wer "oh no it wasn't him puck replied carelessly" "oh no it wasn't him puck replied carelessly"	21_Track_21+21.099410+24.524127
+find_ok:num_txt=239	ST_jj=258	wer_str=0.000000	cmd_wer:./wer "hermia and demetrius were arguing loudly" "hermia and demetrius were arguing loudly"	21_Track_21+24.524127+27.419093
+find_ok:num_txt=240	ST_jj=259	wer_str=0.000000	cmd_wer:./wer "you must have killed lysander" "you must have killed lysander"	21_Track_21+27.419093+29.509070
+find_ok:num_txt=241	ST_jj=260	wer_str=0.000000	cmd_wer:./wer "he'd never leave me" "he'd never leave me"	21_Track_21+29.509116+31.434104
+find_ok:num_txt=242	ST_jj=261	wer_str=0.000000	cmd_wer:./wer "hermia stormed off" "hermia stormed off"	21_Track_21+31.434150+33.358821
+find_ok:num_txt=243	ST_jj=262	wer_str=0.000000	cmd_wer:./wer "demetrius shrugged" "demetrius shrugged"	21_Track_21+33.358821+35.028798
+find_ok:num_txt=244	ST_jj=263	wer_str=0.000000	cmd_wer:./wer "she's crazy he thought" "she's crazy he thought"	21_Track_21+35.028844+37.523855
+find_ok:num_txt=245	ST_jj=264	wer_str=0.000000	cmd_wer:./wer "i'll wait here until she's calmed down" "i'll wait here until she's calmed down"	21_Track_21+37.523991+39.933968
+find_ok:num_txt=246	ST_jj=265	wer_str=0.000000	cmd_wer:./wer "he sat down and yawned" "he sat down and yawned"	21_Track_21+39.934331+41.964308
+find_ok:num_txt=247	ST_jj=266	wer_str=0.000000	cmd_wer:./wer "soon he was sound asleep" "soon he was sound asleep"	21_Track_21+41.964308+44.409297
+find_ok:num_txt=248	ST_jj=267	wer_str=0.000000	cmd_wer:./wer "oberon groaned" "oberon groaned"	22_Track_22+0.111338+1.851338
+find_ok:num_txt=249	ST_jj=268	wer_str=0.000000	cmd_wer:./wer "oh puck what have you done" "oh puck what have you done"	22_Track_22+1.851429+5.431156
+find_ok:num_txt=250	ST_jj=269	wer_str=0.000000	cmd_wer:./wer "we must put this right" "we must put this right"	22_Track_22+5.431156+7.636145
+find_ok:num_txt=251	ST_jj=270	wer_str=0.000000	cmd_wer:./wer "tiptoeing to demetrius he squeezed flower juice in his eyes" "tiptoeing to demetrius he squeezed flower juice in his eyes"	22_Track_22+7.636236+11.676236
+find_ok:num_txt=252	ST_jj=271	wer_str=0.000000	cmd_wer:./wer "now go puck swifter than the night and find helena" "now go puck swifter than the night and find helena"	22_Track_22+11.676508+15.066349
+find_ok:num_txt=253	ST_jj=272	wer_str=0.000000	cmd_wer:./wer "no need said puck" "no need said puck"	22_Track_22+15.066349+17.066349
+find_ok:num_txt=254	ST_jj=273	wer_str=0.000000	cmd_wer:./wer "she's here" "she's here"	22_Track_22+17.066848+18.151655
+find_ok:num_txt=255	ST_jj=274	wer_str=0.000000	cmd_wer:./wer "sure enough there was helena closely followed by a desperate lysander" "sure enough there was helena closely followed by a desperate lysander"	22_Track_22+18.151655+23.611655
+find_ok:num_txt=256	ST_jj=275	wer_str=0.000000	cmd_wer:./wer "i'm not teasing you he insisted" "i'm not teasing you he insisted"	22_Track_22+23.611655+26.381678
+find_ok:num_txt=257	ST_jj=276	wer_str=0.000000	cmd_wer:./wer "i love you" "i love you"	22_Track_22+26.381814+28.126395
+find_ok:num_txt=258	ST_jj=276	wer_str=1.352941	cmd_wer:./wer "ha snorted helena" "snorted helena"	22_Track_22+28.996735+30.426485
+find_ok:num_txt=259	ST_jj=279	wer_str=0.000000	cmd_wer:./wer "you should be saying that to hermia" "you should be saying that to hermia"	22_Track_22+30.426485+32.911474
+find_ok:num_txt=260	ST_jj=280	wer_str=0.000000	cmd_wer:./wer "lysander shook his head" "lysander shook his head"	23_Track_23+0.000000+2.035692
+find_ok:num_txt=261	ST_jj=281	wer_str=0.000000	cmd_wer:./wer "i made a mistake" "i made a mistake"	23_Track_23+2.035964+3.680998
+find_ok:num_txt=262	ST_jj=282	wer_str=0.000000	cmd_wer:./wer "besides demetrius loves hermia now" "besides demetrius loves hermia now"	23_Track_23+3.681361+6.331156
+find_ok:num_txt=263	ST_jj=283	wer_str=0.000000	cmd_wer:./wer "he'll never love you" "he'll never love you"	23_Track_23+6.331156+8.300862
+find_ok:num_txt=264	ST_jj=283	wer_str=0.862069	cmd_wer:./wer "helena i love you demetrius cried waking up and seeing her" "demetrius cried waking up and seeing her"	23_Track_23+10.486259+13.320907
+find_ok:num_txt=265	ST_jj=286	wer_str=0.000000	cmd_wer:./wer "don't be unkind demetrius" "don't be unkind demetrius"	23_Track_23+13.320907+15.250884
+find_ok:num_txt=266	ST_jj=287	wer_str=0.000000	cmd_wer:./wer "you love hermia" "you love hermia"	23_Track_23+15.250884+16.860907
+find_ok:num_txt=267	ST_jj=288	wer_str=0.000000	cmd_wer:./wer "you can keep hermia" "you can keep hermia"	23_Track_23+16.861043+18.995800
+find_ok:num_txt=268	ST_jj=289	wer_str=0.000000	cmd_wer:./wer "i love helena" "i love helena"	23_Track_23+18.995800+20.970975
+find_ok:num_txt=269	ST_jj=290	wer_str=0.000000	cmd_wer:./wer "helena groaned" "helena groaned"	23_Track_23+20.971111+22.744300
+find_ok:num_txt=270	ST_jj=291	wer_str=0.000000	cmd_wer:./wer "stop it" "stop it"	23_Track_23+22.744300+23.841088
+find_ok:num_txt=271	ST_jj=291	wer_str=0.000000	cmd_wer:./wer "stop it" "stop it"	23_Track_23+22.744300+23.841088
+find_ok:num_txt=272	ST_jj=293	wer_str=0.000000	cmd_wer:./wer "now you're both teasing me" "now you're both teasing me"	23_Track_23+25.156190+27.811111
+find_ok:num_txt=273	ST_jj=294	wer_str=0.000000	cmd_wer:./wer "look lysander demetrius added as he spotted hermia" "look lysander demetrius added as he spotted hermia"	23_Track_23+27.811111+31.606122
+find_ok:num_txt=274	ST_jj=295	wer_str=0.000000	cmd_wer:./wer "here comes your love now" "here comes your love now"	23_Track_23+31.606122+33.846077
+find_ok:num_txt=275	ST_jj=296	wer_str=0.000000	cmd_wer:./wer "hermia made straight for lysander" "hermia made straight for lysander"	23_Track_23+33.846077+36.117300
+find_ok:num_txt=276	ST_jj=296	wer_str=1.129032	cmd_wer:./wer "why did you leave me she begged" "why did you leave me"	23_Track_23+36.117300+38.071156
+find_ok:num_txt=277	ST_jj=299	wer_str=0.000000	cmd_wer:./wer "i love helena now" "i love helena now"	23_Track_23+39.130975+41.230975
+find_ok:num_txt=278	ST_jj=300	wer_str=0.000000	cmd_wer:./wer "you can't" "you can't"	23_Track_23+41.231066+42.696054
+find_ok:num_txt=279	ST_jj=301	wer_str=0.000000	cmd_wer:./wer "she must be in on the joke too" "she must be in on the joke too"	23_Track_23+42.696145+45.978200
+find_ok:num_txt=280	ST_jj=302	wer_str=0.000000	cmd_wer:./wer "helena was furious" "helena was furious"	24_Track_24+0.000000+1.829116
+find_ok:num_txt=281	ST_jj=303	wer_str=0.000000	cmd_wer:./wer "how could her best friend be so mean" "how could her best friend be so mean"	24_Track_24+1.829252+4.641700
+find_ok:num_txt=282	ST_jj=303	wer_str=1.028571	cmd_wer:./wer "you you puppet she yelled at hermia" "she yelled at hermia"	24_Track_24+7.029388+9.019410
+find_ok:num_txt=283	ST_jj=303	wer_str=1.238095	cmd_wer:./wer "puppet thought hermia" "thought hermia"	24_Track_24+10.319501+11.274240
+find_ok:num_txt=284	ST_jj=308	wer_str=0.000000	cmd_wer:./wer "she's making fun of my height" "she's making fun of my height"	24_Track_24+11.274240+13.544127
+find_ok:num_txt=285	ST_jj=309	wer_str=0.000000	cmd_wer:./wer "hermia glared at lysander" "hermia glared at lysander"	24_Track_24+13.544127+16.014500
+find_ok:num_txt=286	ST_jj=310	wer_str=0.000000	cmd_wer:./wer "do you love helena because she's taller than me" "do you love helena because she's taller than me"	24_Track_24+16.014500+18.602400
+find_ok:num_txt=287	ST_jj=311	wer_str=0.000000	cmd_wer:./wer "i'm tall enough to scratch your eyes out" "i'm tall enough to scratch your eyes out"	24_Track_24+18.602400+21.239229
+find_ok:num_txt=288	ST_jj=312	wer_str=0.000000	cmd_wer:./wer "oberon sighed" "oberon sighed"	24_Track_24+21.239501+23.303500
+find_ok:num_txt=289	ST_jj=313	wer_str=0.000000	cmd_wer:./wer "things were getting worse" "things were getting worse"	24_Track_24+23.303500+25.254195
+find_ok:num_txt=290	ST_jj=313	wer_str=1.180328	cmd_wer:./wer "demetrius and lysander decided to fight each other for helena" "demetrius and lysander decided to fight each_other for helena"	24_Track_24+25.254195+29.096700
+find_ok:num_txt=291	ST_jj=315	wer_str=0.000000	cmd_wer:./wer "both swore they loved her most" "both swore they loved her most"	24_Track_24+29.096700+31.684535
+find_ok:num_txt=292	ST_jj=316	wer_str=0.023810	cmd_wer:./wer "you'd better follow them  oberon told puck" "you'd better follow them oberon told puck"	25_Track_25+0.000000+3.180136
+find_ok:num_txt=293	ST_jj=317	wer_str=0.000000	cmd_wer:./wer "keep them apart until you've cured lysander" "keep them apart until you've cured lysander"	25_Track_25+3.180181+5.890204
+find_ok:num_txt=294	ST_jj=318	wer_str=0.000000	cmd_wer:./wer "meanwhile i'll find titania" "meanwhile i'll find titania"	25_Track_25+5.890340+8.335329
+find_ok:num_txt=295	ST_jj=319	wer_str=0.000000	cmd_wer:./wer "be quick said puck as he flew away" "be quick said puck as he flew away"	25_Track_25+8.335329+11.355283
+find_ok:num_txt=296	ST_jj=320	wer_str=0.000000	cmd_wer:./wer "it's almost dawn" "it's almost dawn"	25_Track_25+11.355283+13.555283
+find_ok:num_txt=297	ST_jj=321	wer_str=0.000000	cmd_wer:./wer "chapter six" "chapter six"	25_Track_25+14.015057+15.970068
+find_ok:num_txt=298	ST_jj=322	wer_str=0.000000	cmd_wer:./wer "breaking the spells" "breaking the spells"	25_Track_25+15.970748+18.325578
+find_ok:num_txt=299	ST_jj=323	wer_str=0.000000	cmd_wer:./wer "up and down up and down i will lead them up and down" "up and down up and down i will lead them up and down"	25_Track_25+18.325578+24.385578
+find_ok:num_txt=300	ST_jj=324	wer_str=0.000000	cmd_wer:./wer "puck sang as he darted through the woods until lysander's angry voice interrupted him" "puck sang as he darted through the woods until lysander's angry voice interrupted him"	25_Track_25+24.385714+29.900726
+find_ok:num_txt=301	ST_jj=325	wer_str=0.000000	cmd_wer:./wer "where are you demetrius" "where are you demetrius"	25_Track_25+29.900771+32.480771
+find_ok:num_txt=302	ST_jj=325	wer_str=1.212766	cmd_wer:./wer "here i am called puck copying demetrius's voice" "called puck copying demetrius's voice"	26_Track_26+1.160816+4.200499
+find_ok:num_txt=303	ST_jj=328	wer_str=0.000000	cmd_wer:./wer "lysander ran off in the direction of the voice as demetrius came by" "lysander ran off in the direction of the voice as demetrius came by"	26_Track_26+4.200499+8.440499
+find_ok:num_txt=304	ST_jj=328	wer_str=0.961538	cmd_wer:./wer "where are you lysander you coward bellowed demetrius" "where are you lysander you coward"	26_Track_26+8.440816+11.205760
+find_ok:num_txt=305	ST_jj=328	wer_str=0.840000	cmd_wer:./wer "over here cried puck wheeling around and sending demetrius the opposite way" "cried puck wheeling around and sending demetrius the opposite way"	26_Track_26+13.865624+18.455510
+find_ok:num_txt=306	ST_jj=333	wer_str=0.027778	cmd_wer:./wer "soon the pair were chasing all over the forest trying to find each other" "soon the pair were chasing all over the forest trying to find each_other"	26_Track_26+18.455510+23.145533
+find_ok:num_txt=307	ST_jj=334	wer_str=0.000000	cmd_wer:./wer "finally exhausted they lay down either side of a bush and slept" "finally exhausted they lay down either side of a bush and slept"	26_Track_26+23.145760+28.865714
+find_ok:num_txt=308	ST_jj=335	wer_str=0.000000	cmd_wer:./wer "no sooner had they fallen asleep than helena came along" "no sooner had they fallen asleep than helena came along"	26_Track_26+28.865714+32.895465
+find_ok:num_txt=309	ST_jj=336	wer_str=0.000000	cmd_wer:./wer "feeling miserable and tired she sat down without even noticing them" "feeling miserable and tired she sat down without even noticing them"	26_Track_26+32.895465+38.295465
+find_ok:num_txt=310	ST_jj=337	wer_str=0.000000	cmd_wer:./wer "only three" "only three"	26_Track_26+38.295737+39.745669
+find_ok:num_txt=311	ST_jj=338	wer_str=0.000000	cmd_wer:./wer "come one more two of each kind makes up four" "come one more two of each kind makes up four"	26_Track_26+39.745669+44.065669
+find_ok:num_txt=312	ST_jj=339	wer_str=0.000000	cmd_wer:./wer "a moment later hermia lay down as well" "a moment later hermia lay down as well"	27_Track_27+0.000000+3.219002
+find_ok:num_txt=313	ST_jj=340	wer_str=0.000000	cmd_wer:./wer "while the four of them slept puck squeezed flower juice into lysander's eyes" "while the four of them slept puck squeezed flower juice into lysander's eyes"	27_Track_27+3.219048+8.678776
+find_ok:num_txt=314	ST_jj=341	wer_str=0.000000	cmd_wer:./wer "no more go ill jack shall have jill" "no more go ill jack shall have jill"	27_Track_27+8.678776+11.983764
+find_ok:num_txt=315	ST_jj=342	wer_str=0.000000	cmd_wer:./wer "now it is shown each takes his own" "now it is shown each takes his own"	27_Track_27+11.984036+15.433923
+find_ok:num_txt=316	ST_jj=343	wer_str=0.000000	cmd_wer:./wer "quietly barely ruffling the flowers titania passed by" "quietly barely ruffling the flowers titania passed by"	27_Track_27+15.433923+20.423900
+find_ok:num_txt=317	ST_jj=344	wer_str=0.000000	cmd_wer:./wer "her fairies flew after her making a fuss of bottom" "her fairies flew after her making a fuss of bottom"	27_Track_27+20.423900+23.923855
+find_ok:num_txt=318	ST_jj=344	wer_str=1.097561	cmd_wer:./wer "be gone titania told the fairies suddenly" "titania told the fairies suddenly"	27_Track_27+24.949161+27.038912
+find_ok:num_txt=319	ST_jj=347	wer_str=0.000000	cmd_wer:./wer "my love and i must sleep" "my love and i must sleep"	27_Track_27+27.038912+29.378912
+find_ok:num_txt=320	ST_jj=348	wer_str=0.000000	cmd_wer:./wer "puck saw titania cuddling bottom's big donkey head and burst out laughing" "puck saw titania cuddling bottom's big donkey head and burst out laughing"	27_Track_27+29.379093+35.034104
+find_ok:num_txt=321	ST_jj=349	wer_str=0.000000	cmd_wer:./wer "i'm beginning to feel sorry for her said oberon appearing from behind a tree" "i'm beginning to feel sorry for her said oberon appearing from behind a tree"	28_Track_28+0.000000+5.142676
+find_ok:num_txt=322	ST_jj=350	wer_str=0.000000	cmd_wer:./wer "i'm going to take off the spell" "i'm going to take off the spell"	28_Track_28+5.142676+7.062676
+find_ok:num_txt=323	ST_jj=351	wer_str=0.000000	cmd_wer:./wer "and you puck must do the same for that poor donkey" "and you puck must do the same for that poor donkey"	28_Track_28+7.062948+11.272744
+find_ok:num_txt=324	ST_jj=352	wer_str=0.000000	cmd_wer:./wer "oberon gently touched titania's eyes and she woke with a sigh" "oberon gently touched titania's eyes and she woke with a sigh"	28_Track_28+11.272744+15.962676
+find_ok:num_txt=325	ST_jj=353	wer_str=0.000000	cmd_wer:./wer "come on he said" "come on he said"	28_Track_28+15.962676+17.642676
+find_ok:num_txt=326	ST_jj=354	wer_str=0.000000	cmd_wer:./wer "let's go" "let's go"	28_Track_28+17.643265+18.502948
+find_ok:num_txt=327	ST_jj=355	wer_str=0.000000	cmd_wer:./wer "tomorrow we'll dance at theseus's wedding and bless the happy couple" "tomorrow we'll dance at theseus's wedding and bless the happy couple"	28_Track_28+18.502948+23.352971
+find_ok:num_txt=328	ST_jj=355	wer_str=3.777778	cmd_wer:./wer "chapter 7" "what"	29_Track_29+24.560499+25.700499
+find_ok:num_txt=329	ST_jj=357	wer_str=0.000000	cmd_wer:./wer "happily married" "happily married"	28_Track_28+26.264354+27.914331
+find_ok:num_txt=330	ST_jj=358	wer_str=0.000000	cmd_wer:./wer "the sun was rising over the trees when the shrill blast of a horn shattered the forest calm" "the sun was rising over the trees when the shrill blast of a horn shattered the forest calm"	28_Track_28+27.914331+34.044082
+find_ok:num_txt=331	ST_jj=359	wer_str=0.000000	cmd_wer:./wer "theseus had come out hunting with hippolyta and egeus" "theseus had come out hunting with hippolyta and egeus"	28_Track_28+34.044082+37.674059
+find_ok:num_txt=332	ST_jj=359	wer_str=0.883333	cmd_wer:./wer "look who's here theseus cried noticing four stirring figures" "theseus cried noticing four stirring figures"	29_Track_29+1.080998+4.680544
+find_ok:num_txt=333	ST_jj=362	wer_str=0.000000	cmd_wer:./wer "the four quickly jumped up" "the four quickly jumped up"	29_Track_29+4.680544+6.660454
+find_ok:num_txt=334	ST_jj=363	wer_str=0.000000	cmd_wer:./wer "my lord said lysander bowing to the duke" "my lord said lysander bowing to the duke"	29_Track_29+6.660454+10.900454
+find_ok:num_txt=335	ST_jj=364	wer_str=0.000000	cmd_wer:./wer "theseus looked at lysander and then at demetrius" "theseus looked at lysander and then at demetrius"	29_Track_29+10.900590+14.380363
+find_ok:num_txt=336	ST_jj=365	wer_str=0.000000	cmd_wer:./wer "i thought you both wanted to marry the same girl" "i thought you both wanted to marry the same girl"	29_Track_29+14.380363+17.270385
+find_ok:num_txt=337	ST_jj=366	wer_str=0.000000	cmd_wer:./wer "what happened" "what happened"	29_Track_29+17.270658+18.620408
+find_ok:num_txt=338	ST_jj=367	wer_str=0.000000	cmd_wer:./wer "lysander shrugged" "lysander shrugged"	29_Track_29+18.620408+20.250431
+find_ok:num_txt=339	ST_jj=368	wer_str=0.000000	cmd_wer:./wer "i've no idea" "i've no idea"	29_Track_29+20.250431+21.940408
+find_ok:num_txt=340	ST_jj=369	wer_str=0.000000	cmd_wer:./wer "hermia and i were running away" "hermia and i were running away"	29_Track_29+21.940680+24.560499
+find_ok:num_txt=341	ST_jj=369	wer_str=1.133333	cmd_wer:./wer "what burst out egeus with a scowl on his face" "burst out egeus with a scowl on his face"	29_Track_29+25.700907+28.390522
+find_ok:num_txt=342	ST_jj=372	wer_str=0.000000	cmd_wer:./wer "outrageous" "outrageous"	29_Track_29+28.390522+29.910522
+find_ok:num_txt=343	ST_jj=373	wer_str=0.000000	cmd_wer:./wer "clap him in irons" "clap him in irons"	29_Track_29+29.910703+31.190658
+find_ok:num_txt=344	ST_jj=374	wer_str=0.000000	cmd_wer:./wer "demetrius you nearly lost your wife" "demetrius you nearly lost your wife"	29_Track_29+31.190703+34.140726
+find_ok:num_txt=345	ST_jj=375	wer_str=0.000000	cmd_wer:./wer "ah said demetrius" "ah said demetrius"	29_Track_29+34.140726+36.370522
+find_ok:num_txt=346	ST_jj=376	wer_str=0.000000	cmd_wer:./wer "about that" "about that"	29_Track_29+36.370522+37.670522
+find_ok:num_txt=347	ST_jj=377	wer_str=0.000000	cmd_wer:./wer "it's a funny thing but my love for hermia has melted like snow" "it's a funny thing but my love for hermia has melted like snow"	29_Track_29+37.670839+42.500816
+find_ok:num_txt=348	ST_jj=378	wer_str=0.000000	cmd_wer:./wer "it's helena i adore" "it's helena i adore"	29_Track_29+42.500907+44.740499
+find_ok:num_txt=349	ST_jj=379	wer_str=0.000000	cmd_wer:./wer "you're all crazy" "you're all crazy"	29_Track_29+44.740499+47.200499
+find_ok:num_txt=350	ST_jj=380	wer_str=0.000000	cmd_wer:./wer "egeus turned purple with rage but theseus smiled" "egeus turned purple with rage but theseus smiled"	30_Track_30+0.000000+3.863401
+find_ok:num_txt=351	ST_jj=380	wer_str=1.222222	cmd_wer:./wer "excellent  he said" "excellent"	30_Track_30+3.863492+4.853288
+find_ok:num_txt=352	ST_jj=383	wer_str=0.000000	cmd_wer:./wer "we can all be married together" "we can all be married together"	30_Track_30+5.673333+8.003220
+find_ok:num_txt=353	ST_jj=384	wer_str=0.000000	cmd_wer:./wer "taking hippolyta's hand he led the happy couples back to his palace" "taking hippolyta's hand he led the happy couples back to his palace"	30_Track_30+8.003220+12.983220
+find_ok:num_txt=354	ST_jj=384	wer_str=0.870968	cmd_wer:./wer "no one noticed bottom waking up" "no_one noticed bottom waking up"	30_Track_30+12.983311+15.913333
+find_ok:num_txt=355	ST_jj=386	wer_str=0.000000	cmd_wer:./wer "what an amazing dream he mumbled as he too left the woods" "what an amazing dream he mumbled as he too left the woods"	30_Track_30+15.913469+21.103175
+find_ok:num_txt=356	ST_jj=387	wer_str=0.000000	cmd_wer:./wer "i thought i was a donkey" "i thought i was a donkey"	30_Track_30+21.103175+23.983175
+find_ok:num_txt=357	ST_jj=388	wer_str=0.000000	cmd_wer:./wer "a few hours later three weddings had taken place" "a few hours later three weddings had taken place"	30_Track_30+23.983401+28.293288
+find_ok:num_txt=358	ST_jj=389	wer_str=0.000000	cmd_wer:./wer "theseus's palace was packed with guests settling back to enjoy the sad tale of pyramus and thisbe" "theseus's palace was packed with guests settling back to enjoy the sad tale of pyramus and thisbe"	30_Track_30+28.293288+35.223311
+find_ok:num_txt=359	ST_jj=390	wer_str=0.000000	cmd_wer:./wer "here are the actors and here is our show" "here are the actors and here is our show"	30_Track_30+35.223447+39.313424
+find_ok:num_txt=360	ST_jj=391	wer_str=0.000000	cmd_wer:./wer "to a trumpet fanfare bottom flute and snout walked around the stage" "to a trumpet fanfare bottom flute and snout walked around the stage"	31_Track_31+0.000000+5.023946
+find_ok:num_txt=361	ST_jj=392	wer_str=0.000000	cmd_wer:./wer "snout stood in the middle as the wall and the play began" "snout stood in the middle as the wall and the play began"	31_Track_31+5.024172+8.773741
+find_ok:num_txt=362	ST_jj=393	wer_str=0.000000	cmd_wer:./wer "dear thisbe kiss me through this wall" "dear thisbe kiss me through this wall"	31_Track_31+8.773741+12.753741
+find_ok:num_txt=363	ST_jj=394	wer_str=0.000000	cmd_wer:./wer "i kiss the wall not you at all" "i kiss the wall not you at all"	31_Track_31+12.753741+16.803764
+find_ok:num_txt=364	ST_jj=395	wer_str=0.000000	cmd_wer:./wer "this is no good said bottom as pyramus" "this is no good said bottom as pyramus"	31_Track_31+17.353107+21.143084
+find_ok:num_txt=365	ST_jj=396	wer_str=0.000000	cmd_wer:./wer "let's meet in the graveyard" "let's meet in the graveyard"	31_Track_31+21.143084+23.333016
+find_ok:num_txt=366	ST_jj=397	wer_str=0.000000	cmd_wer:./wer "flute nodded and all three trooped off" "flute nodded and all three trooped off"	31_Track_31+23.333016+26.632608
+find_ok:num_txt=367	ST_jj=398	wer_str=0.000000	cmd_wer:./wer "as they left snug crawled in with starveling who was carrying a hoop of lights" "as they left snug crawled in with starveling who was carrying a hoop of lights"	31_Track_31+26.632608+32.292653
+find_ok:num_txt=368	ST_jj=399	wer_str=0.000000	cmd_wer:./wer "snug gave a roar" "snug gave a roar"	31_Track_31+32.293061+34.133016
+find_ok:num_txt=369	ST_jj=400	wer_str=0.000000	cmd_wer:./wer "i'm a fierce lion but don't be scared" "i'm a fierce lion but don't be scared"	31_Track_31+36.134512+38.818900
+find_ok:num_txt=370	ST_jj=401	wer_str=0.000000	cmd_wer:./wer "it's only pretend" "it's only pretend"	31_Track_31+38.818900+40.254240
+find_ok:num_txt=371	ST_jj=402	wer_str=0.000000	cmd_wer:./wer "see my lights" "see my lights"	31_Track_31+40.254240+41.634195
+find_ok:num_txt=372	ST_jj=403	wer_str=0.000000	cmd_wer:./wer "i'm the moon" "i'm the moon"	31_Track_31+41.634785+43.244354
+find_ok:num_txt=373	ST_jj=404	wer_str=0.000000	cmd_wer:./wer "flute came on again tripping over his dress" "flute came on again tripping over his dress"	31_Track_31+43.244354+46.574376
+find_ok:num_txt=374	ST_jj=404	wer_str=0.820513	cmd_wer:./wer "where are you pyramus my love he called" "where are you pyramus my love"	31_Track_31+46.574376+48.824354
+find_ok:num_txt=375	ST_jj=407	wer_str=0.000000	cmd_wer:./wer "snug roared and flute ran away screaming" "snug roared and flute ran away screaming"	31_Track_31+49.914558+53.454558
+find_ok:num_txt=376	ST_jj=408	wer_str=0.000000	cmd_wer:./wer "as he fled his scarf fell off" "as he fled his scarf fell off"	31_Track_31+53.454830+55.994603
+find_ok:num_txt=377	ST_jj=409	wer_str=0.000000	cmd_wer:./wer "snug chewed it greedily" "snug chewed it greedily"	31_Track_31+55.994603+58.264580
+find_ok:num_txt=378	ST_jj=410	wer_str=0.000000	cmd_wer:./wer "bottom came back and snatched up the scarf" "bottom came back and snatched up the scarf"	32_Track_32+0.000000+3.215374
+find_ok:num_txt=379	ST_jj=411	wer_str=0.000000	cmd_wer:./wer "thisbe" "thisbe"	32_Track_32+3.215374+4.555374
+find_ok:num_txt=380	ST_jj=411	wer_str=1.440000	cmd_wer:./wer "eaten by a lion he sobbed" "eaten by a lion"	32_Track_32+4.555465+6.225261
+find_ok:num_txt=381	ST_jj=414	wer_str=0.000000	cmd_wer:./wer "my dainty duck is no more" "my dainty duck is no more"	32_Track_32+7.247400+10.475374
+find_ok:num_txt=382	ST_jj=415	wer_str=0.000000	cmd_wer:./wer "turning to face the audience he pulled out a fake dagger and stabbed himself" "turning to face the audience he pulled out a fake dagger and stabbed himself"	32_Track_32+10.475646+15.915556
+find_ok:num_txt=383	ST_jj=416	wer_str=0.000000	cmd_wer:./wer "asleep my love" "asleep my love"	32_Track_32+15.915556+17.905578
+find_ok:num_txt=384	ST_jj=417	wer_str=0.000000	cmd_wer:./wer "what dead my dove" "what dead my dove"	32_Track_32+17.905714+19.952300
+find_ok:num_txt=385	ST_jj=418	wer_str=0.000000	cmd_wer:./wer "oh no" "oh no"	32_Track_32+19.952300+21.405533
+find_ok:num_txt=386	ST_jj=419	wer_str=0.000000	cmd_wer:./wer "with a cry of despair flute rushed on and pretended to die too" "with a cry of despair flute rushed on and pretended to die too"	32_Track_32+21.405624+26.265624
+find_ok:num_txt=387	ST_jj=420	wer_str=0.000000	cmd_wer:./wer "as his body fell on bottom the audience clapped and cheered" "as his body fell on bottom the audience clapped and cheered"	32_Track_32+26.265714+30.985714
+find_ok:num_txt=388	ST_jj=421	wer_str=0.000000	cmd_wer:./wer "unseen above the fairy king and queen were also watching the play" "unseen above the fairy king and queen were also watching the play"	32_Track_32+30.985714+35.921100
+find_ok:num_txt=389	ST_jj=422	wer_str=0.000000	cmd_wer:./wer "puck flew over the room sprinkling everyone with fairy dust" "puck flew over the room sprinkling everyone with fairy dust"	32_Track_32+35.921100+40.355510
+find_ok:num_txt=390	ST_jj=423	wer_str=0.000000	cmd_wer:./wer "oberon smiled" "oberon smiled"	32_Track_32+40.355510+42.035510
+find_ok:num_txt=391	ST_jj=424	wer_str=0.000000	cmd_wer:./wer "now they'll all live happily ever after he said" "now they'll all live happily ever after he said"	32_Track_32+42.035556+46.215329
+find_ok:num_txt=392	ST_jj=425	wer_str=0.000000	cmd_wer:./wer "and they did" "and they did"	32_Track_32+46.215329+48.095329
+find_ok:num_txt=393	ST_jj=426	wer_str=0.000000	cmd_wer:./wer "william shakespeare fifteen sixty four to sixteen sixteen was born in stratford-upon-avon england but became famous as an actor and writer when he moved to london" "william shakespeare fifteen sixty four to sixteen sixteen was born in stratford-upon-avon england but became famous as an actor and writer when he moved to london"	33_Track_33+0.000000+10.216825
+find_ok:num_txt=394	ST_jj=427	wer_str=0.000000	cmd_wer:./wer "he wrote numerous poems and almost forty plays which are still performed and enjoyed today" "he wrote numerous poems and almost forty plays which are still performed and enjoyed today"	33_Track_33+10.216825+16.476825
+find_ok:num_txt=396	ST_jj=428	wer_str=0.006452	cmd_wer:./wer "a midsummer night's dream was read by lesley sims and produced by  mairi mackinnon with sound production by beth punter for the classical recording company" "a midsummer night's dream was read by lesley sims and produced by mairi mackinnon with sound production by beth punter for the classical recording company"	34_Track_34+0.000000+9.515193
+find_ok:num_txt=397	ST_jj=429	wer_str=0.000000	cmd_wer:./wer "this is an usborne audio production" "this is an usborne audio production"	34_Track_34+9.515193+11.865170
