@@ -5,7 +5,7 @@ import sys
 import string
 import commands
 
-WER_1 = 0.05
+WER_1 = 0.08
 WER_2 = 0.1
 
 
@@ -208,7 +208,12 @@ if __name__ == '__main__':
             fp_log.write("find_ok:num_txt=%d\tST_jj=%d\twer_str=%s\tcmd_wer:%s\t%s\n"%(ii, ST_jj, wer_str, cmd_ok, tk_tm_ok))
             fp_log.flush()
         if wer_ok < WER_1:
-            fp_out_ok.write("%s\t%s\n"%(tk_tm_ok, line))
+            vec_tk = tk_tm_ok.split("+");
+            tk_name_tmp = vec_tk[0]
+            st_tmp = vec_tk[1]
+            end_tmp = vec_tk[2]
+
+            fp_out_ok.write("%s\t%s\t%s\t%s\n"%(tk_name_tmp, st_tmp, end_tmp, line))
             fp_out_ok.flush()
             continue;
 
@@ -240,8 +245,12 @@ if __name__ == '__main__':
             if wer < WER_2 and time_minus < 0.020 :
                 ### 找到了 完全可以拼接回去 
                 wer_ok = wer
-                fp_out_ok.write("%s\t%s\n"%(track_conn, line))
-                fp_err.flush()
+                vec_tk = track_conn.split("+");
+                tk_name_tmp = vec_tk[0]
+                st_tmp = vec_tk[1]
+                end_tmp = vec_tk[2]
+                fp_out_ok.write("%s\t%s\t%s\t%s\n"%(tk_name_tmp, st_tmp, end_tmp, line))
+                fp_out_ok.flush()
                 continue;
 
             if wer < wer_ok:
@@ -275,8 +284,12 @@ if __name__ == '__main__':
             if wer < WER_2 and time_minus<0.020 :
                 ### 找到了 完全可以拼接回去 
                 wer_ok = wer
-                fp_out_ok.write("%s\t%s\n"%(track_conn, line))
-                fp_err.flush()
+                vec_tk = track_conn.split("+");
+                tk_name_tmp = vec_tk[0]
+                st_tmp = vec_tk[1]
+                end_tmp = vec_tk[2]
+                fp_out_ok.write("%s\t%s\t%s\t%s\n"%(tk_name_tmp, st_tmp, end_tmp, line))
+                fp_out_ok.flush()
                 continue;
 
             if wer < wer_ok:

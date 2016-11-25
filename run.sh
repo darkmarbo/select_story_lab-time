@@ -18,7 +18,9 @@
 ##python select_wav.py $out_file $lab_txt $lab_txt.sel
 #python select_wav.py ${dir_lab} ${txt} ${out} ${lab_list}
 ##grep "find_ok:" ${out} > ${out}.find
+
 ##grep -v "wer_str=0.00" ${out}.find > ${out}.find.err
+
 
 dir_in=Tobi
 dir_out=Tobi_out
