@@ -24,7 +24,7 @@
 
 dir_in=Tobi
 dir_out=Tobi_out
-mkdir -p ${dir_out}
+rm -rf ${dir_out} && mkdir -p ${dir_out}
 
 ls -1 ${dir_in} |while read name_story 
 do

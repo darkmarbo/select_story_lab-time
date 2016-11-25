@@ -7,6 +7,8 @@ import commands
 
 WER_1 = 0.08
 WER_2 = 0.1
+TTP="turn the page"
+DING="DING"
 
 
 ### 从lab目录中 读取每个文件中的时间信息和文本行
@@ -114,6 +116,22 @@ def compare_wav(name1,name2):
     elif st1>st2:
         return 3;
 
+def wer_get(lab, res):
+
+    cmd="./wer \"%s\" \"%s\""%(lab, res)
+
+    (ret,out) = commands.getstatusoutput(cmd)
+    wer_str = out[out.find('werfloat:')+9:out.find('werint')]
+    wer = string.atof(wer_str)
+
+    return wer;
+
+def fun_bak_line(line_bak, line):
+    line_bak_new = line_bak;
+    for ii in range(0,len(line_bak)-1):
+        line_bak_new[ii] = line_bak[ii+1];
+    line_bak_new[len(line_bak)-1] = line;
+    return line_bak_new;
 
 if __name__ == '__main__':
 
@@ -148,6 +166,7 @@ if __name__ == '__main__':
     ii = 0;  ### 处理到大文本的第几行 
     ST_jj = 0; ### 每次从这个 index 开始查找 
     ST_jj_last = -1;  ### 上一个 wer=0.0000 的句子编号jj 
+    line_bak=["","","","",""];
     for line in fp_txt:
 
         line = line[:-1]
@@ -155,6 +174,8 @@ if __name__ == '__main__':
             continue;
         
         ii += 1;
+        ### 它和它的前4个 
+        line_bak = fun_bak_line(line_bak, line);
 
         line_low = line.strip().lower();
         line_low = line_low.replace("\"","");
@@ -168,10 +189,13 @@ if __name__ == '__main__':
         wer_ok = 1.0
         cmd_ok = "err"
         jj_find = -1; ### 找到的匹配项 下标 
+        wer_str="";
 
         MAX_JJ = ST_jj + 20;
         if MAX_JJ > N:
             MAX_JJ = N;
+
+        #### 初始查找 
         fp_log.write("\n\nnum_txt=%d\tjj范围[%d\t%d]\t"%(ii,ST_jj,MAX_JJ));
         for jj in range(ST_jj, MAX_JJ):
 
@@ -180,14 +204,8 @@ if __name__ == '__main__':
             #fp_log.write("\n\n\njj=%d\ttrack_name=%s\tcont=%s\n"%(jj,tk_tm,cont_res));
 
             cmd="./wer \"%s\" \"%s\""%(line_low, cont_res)
-
-            (ret,out) = commands.getstatusoutput(cmd)
-            wer_str = out[out.find('werfloat:')+9:out.find('werint')]
-
-            fp_log.write("jj=%d\tcmd_wer:%s\twer_out=%s\twer_str=%s"%(jj, cmd, out, wer_str))
-
-            wer = string.atof(wer_str)
-            fp_log.write("\twer_float=%.4f\n"%(wer))
+            wer = wer_get(line_low, cont_res);
+            fp_log.write("jj=%d\tcmd_wer:%s\twer_float=%.4f\n"%(jj, cmd, wer))
 
             if wer < wer_ok:
                 wer_ok = wer
@@ -203,10 +221,7 @@ if __name__ == '__main__':
                     ST_jj_last = jj;
                     break;
 
-        ### 找到了 最佳匹配项目 
-        if tk_tm_ok != 'err' and wer_ok < 1.0 and jj_find > -1:
-            fp_log.write("find_ok:num_txt=%d\tST_jj=%d\twer_str=%s\tcmd_wer:%s\t%s\n"%(ii, ST_jj, wer_str, cmd_ok, tk_tm_ok))
-            fp_log.flush()
+        ###  单句  找到了 
         if wer_ok < WER_1:
             vec_tk = tk_tm_ok.split("+");
             tk_name_tmp = vec_tk[0]
@@ -219,16 +234,13 @@ if __name__ == '__main__':
 
         #################################################################################
         ### 1. 连接上一句  利用 jj_find 
-        if jj_find>0:
+        if jj_find > 0:
             tk_tm_1 = list_key_sort[jj_find-1];
             cont_res = dict_time[tk_tm_1] + " " + dict_time[tk_tm_ok];
             #fp_log.write("\n\n\njj=%d\ttrack_name=%s\tcont=%s\n"%(jj,tk_tm,cont_res));
 
             cmd="./wer \"%s\" \"%s\""%(line_low, cont_res)
-
-            (ret,out) = commands.getstatusoutput(cmd)
-            wer_str = out[out.find('werfloat:')+9:out.find('werint')]
-            wer = string.atof(wer_str)
+            wer = wer_get(line_low, cont_res);
             fp_log.write("connect_1:%s\t%s\twer_float=%.4f\n"%(line_low,cont_res,wer))
 
             ### 得到拼接后的 wav名字和时间段 
@@ -242,6 +254,7 @@ if __name__ == '__main__':
             time_minus = string.atof(vec_tk_ok[1]) - string.atof(vec_tk_1[2]);
             #print("%.4f"%(time_minus));
 
+            #### 2句 找到了 刚好拼接上 并且中间没有 叮
             if wer < WER_2 and time_minus < 0.020 :
                 ### 找到了 完全可以拼接回去 
                 wer_ok = wer
@@ -252,10 +265,46 @@ if __name__ == '__main__':
                 fp_out_ok.write("%s\t%s\t%s\t%s\n"%(tk_name_tmp, st_tmp, end_tmp, line))
                 fp_out_ok.flush()
                 continue;
+            elif wer < WER_2:
+                ### 当前句 turn the page
+                tk_tm_ttp = list_key_sort[jj_find];
+                line_ttp = dict_time[tk_tm_ttp]
+                wer_ttp = wer_get(TTP, line_ttp);
+                if wer_ttp < 0.3:
+                    #### 中间有叮  输出3句  上一句 叮  下一句  
+
+                    ### 上一句 
+                    tk_tm_1 = list_key_sort[jj_find-1];
+                    vec_tk = tk_tm_1.split("+");
+                    tk_name_tmp = vec_tk[0]
+                    st_tmp = vec_tk[1]
+                    end_tmp = vec_tk[2]
+                    line_tmp = dict_time[tk_tm_1];  ### 上一句文本 
+
+                    fp_out_ok.write("%s\t%s\t%s\t%s\n"%\
+                                (tk_name_tmp, st_tmp, end_tmp, line_tmp))
+                    fp_out_ok.flush()
+
+                    ### 当前句  的时间信息  
+                    tk_tm_ttp = list_key_sort[jj_find];
+                    vec_tk = tk_tm_ttp.split("+");
+                    st_2 = vec_tk[1]
+                    end_2 = vec_tk[2]
+
+                    ### DING 
+                    fp_out_ok.write("%s\t%s\t%s\t%s\n"%\
+                                (tk_name_tmp, end_tmp, st_2, DING))
+                    fp_out_ok.flush()
+
+                    ### 下一句  
+                    fp_out_ok.write("%s\t%s\t%s\t%s\n"%\
+                                (tk_name_tmp, st_2, end_2, line_ttp))
+                    fp_out_ok.flush()
+
+                    continue;
 
             if wer < wer_ok:
                 wer_ok = wer
-                #fp_err.write("%s\t%s\t%s\n"%(tk_tm_ok, line, dict_time[tk_tm_ok] ))
                 fp_err.write("connect_left\t%s\t%s\twer_float=%.4f\n"%(line, cont_res,wer))
                 fp_err.flush()
                 continue;
@@ -266,9 +315,7 @@ if __name__ == '__main__':
             cont_res = dict_time[tk_tm_ok] + " " +dict_time[tk_tm_1];
 
             cmd="./wer \"%s\" \"%s\""%(line_low, cont_res)
-            (ret,out) = commands.getstatusoutput(cmd)
-            wer_str = out[out.find('werfloat:')+9:out.find('werint')]
-            wer = string.atof(wer_str)
+            wer = wer_get(line_low, cont_res);
             fp_log.write("connect_2:%s\t%s\twer_float=%.4f\n"%(line_low,cont_res,wer))
 
             ### 得到拼接后的 wav名字和时间段 
@@ -281,7 +328,7 @@ if __name__ == '__main__':
             time_minus = string.atof(vec_tk_1[1]) - string.atof(vec_tk_ok[2]);
             #print("%.4f"%(time_minus));
 
-            if wer < WER_2 and time_minus<0.020 :
+            if wer < WER_2 and time_minus < 0.020 :
                 ### 找到了 完全可以拼接回去 
                 wer_ok = wer
                 vec_tk = track_conn.split("+");
@@ -291,6 +338,43 @@ if __name__ == '__main__':
                 fp_out_ok.write("%s\t%s\t%s\t%s\n"%(tk_name_tmp, st_tmp, end_tmp, line))
                 fp_out_ok.flush()
                 continue;
+            elif wer < WER_2:
+                ### 下一句是  turn the page
+                tk_tm_ttp = list_key_sort[jj_find+1];
+                line_ttp = dict_time[tk_tm_ttp]
+                wer_ttp = wer_get(TTP, line_ttp);
+                if wer_ttp < 0.3:
+                    #### 中间有叮  输出3句  上一句 叮  下一句  
+                    print("test....");
+
+                    ### 当前句  
+                    tk_tm_1 = list_key_sort[jj_find];
+                    vec_tk = tk_tm_1.split("+");
+                    tk_name_tmp = vec_tk[0]
+                    st_tmp = vec_tk[1]
+                    end_tmp = vec_tk[2]
+                    line_tmp = line_bak[3];   
+
+                    fp_out_ok.write("%s\t%s\t%s\t%s\n"%\
+                                (tk_name_tmp, st_tmp, end_tmp, line_tmp))
+                    fp_out_ok.flush()
+
+                    ### 当前句  的时间信息  
+                    vec_tk = tk_tm_ttp.split("+");
+                    st_2 = vec_tk[1]
+                    end_2 = vec_tk[2]
+
+                    ### DING 
+                    fp_out_ok.write("%s\t%s\t%s\t%s\n"%\
+                                (tk_name_tmp, end_tmp, st_2, DING))
+                    fp_out_ok.flush()
+
+                    ### 下一句  
+                    fp_out_ok.write("%s\t%s\t%s\t%s\n"%\
+                                (tk_name_tmp, st_2, end_2, line_ttp))
+                    fp_out_ok.flush()
+
+                    continue;
 
             if wer < wer_ok:
                 wer_ok = wer
