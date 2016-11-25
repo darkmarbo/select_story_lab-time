@@ -53,7 +53,7 @@ do
 ### 提取 lab文件list 
     lab_list=${name_story}.lab.list
     ls -1 ${path_lab} > ${lab_list}
-    python select_wav.py ${path_lab} ${path_txt} ${dir_out}/${name_story}_out  ${lab_list}
+    python select_wav_2.py ${path_lab} ${path_txt} ${dir_out}/${name_story}_out  ${lab_list}
     rm -rf ${lab_list}
 
 done 

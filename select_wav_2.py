@@ -9,6 +9,7 @@ WER_1 = 0.08
 WER_2 = 0.1
 TTP="turn the page"
 DING="DING"
+MAX_FIND_LEN=40
 
 
 ### 从lab目录中 读取每个文件中的时间信息和文本行
@@ -191,7 +192,8 @@ if __name__ == '__main__':
         jj_find = -1; ### 找到的匹配项 下标 
         wer_str="";
 
-        MAX_JJ = ST_jj + 20;
+        ### 最大查找范围 
+        MAX_JJ = ST_jj + MAX_FIND_LEN;
         if MAX_JJ > N:
             MAX_JJ = N;
 
@@ -232,164 +234,80 @@ if __name__ == '__main__':
             fp_out_ok.flush()
             continue;
 
-        #################################################################################
-        ### 1. 连接上一句  利用 jj_find 
-        if jj_find > 0:
-            tk_tm_1 = list_key_sort[jj_find-1];
-            cont_res = dict_time[tk_tm_1] + " " + dict_time[tk_tm_ok];
-            #fp_log.write("\n\n\njj=%d\ttrack_name=%s\tcont=%s\n"%(jj,tk_tm,cont_res));
 
-            cmd="./wer \"%s\" \"%s\""%(line_low, cont_res)
-            wer = wer_get(line_low, cont_res);
-            fp_log.write("connect_1:%s\t%s\twer_float=%.4f\n"%(line_low,cont_res,wer))
+#--------------------------  连接上下的句子  查找  -----------------------------------------
+        line_res_max = dict_time[list_key_sort[jj_find]]; ### 记录目前最长最好的 识别结果串
+        jj_find_left = jj_find;   ### 记录最上面 靠谱的那一个 
+        jj_find_right = jj_find;   ### 记录最下面 靠谱的那一个 下标jj 
 
-            ### 得到拼接后的 wav名字和时间段 
-            vec_tk_1 = tk_tm_1.split("+"); 
-            vec_tk_ok = tk_tm_ok.split("+"); 
-            if len(vec_tk_1) != 3 or len(vec_tk_ok) != 3:
-                print("ERROR: vec_tk_1 format err!");
-                fp_err.write("%s\t%s\n"%(tk_tm_1, line))
-                continue;
-            track_conn = "%s+%s+%s"%(vec_tk_ok[0], vec_tk_1[1], vec_tk_ok[2]);
+        #### 从 jj_find 往前连接N句  wer_ok 不在变小  
+        for jj_tmp in range(1,jj_find+1):  ### 上面第几个 [1,jj_find] 
 
-            ### 中间那个 # 的时间差 大不大 
-            time_minus = string.atof(vec_tk_ok[1]) - string.atof(vec_tk_1[2]);
-            #print("%.4f"%(time_minus));
+            line_res_jj = dict_time[list_key_sort[jj_find-jj_tmp]]; 
+            line_res_plus = line_res_jj + " " + line_res_max; ### 当前计算的line和
 
-            #### 2句 找到了 刚好拼接上 并且中间没有 叮
-            if wer < WER_2 and time_minus < 0.1 :
-                ### 找到了 完全可以拼接回去 
-                wer_ok = wer
-                vec_tk = track_conn.split("+");
-                tk_name_tmp = vec_tk[0]
-                st_tmp = vec_tk[1]
-                end_tmp = vec_tk[2]
-                fp_out_ok.write("%s\t%s\t%s\t%s\n"%(tk_name_tmp, st_tmp, end_tmp, line))
-                fp_out_ok.flush()
-                continue;
-            elif wer < WER_2:
-                ### 当前句 turn the page
-                tk_tm_ttp = list_key_sort[jj_find];
-                line_ttp = dict_time[tk_tm_ttp]
-                wer_ttp = wer_get(TTP, line_ttp);
-                if wer_ttp < 0.3:
-                    #### 中间有叮  输出3句  上一句 叮  下一句  
+            wer = wer_get(line_low, line_res_plus);
+            if wer < wer_ok: ### 变小了 先把这行合并 
+                wer_ok = wer;
+                line_res_max = line_res_plus;
+                jj_find_left = jj_find - jj_tmp;
+            else:
+                break;
 
-                    ### 上一句 
-                    tk_tm_1 = list_key_sort[jj_find-1];
-                    vec_tk = tk_tm_1.split("+");
-                    tk_name_tmp = vec_tk[0]
-                    st_tmp = vec_tk[1]
-                    end_tmp = vec_tk[2]
-                    line_tmp = dict_time[tk_tm_1];  ### 上一句文本 
+        #### 从 jj_find 往后连接N句  wer_ok 不在变小  
+        for jj_tmp in range(1, N-jj_find):  ### 下面第几个 [1, N-jj_find-1] 
 
-                    fp_out_ok.write("%s\t%s\t%s\t%s\n"%\
-                                (tk_name_tmp, st_tmp, end_tmp, line_tmp))
-                    fp_out_ok.flush()
+            line_res_jj = dict_time[list_key_sort[jj_find + jj_tmp]]; 
+            line_res_plus = line_res_max + line_res_jj; ### 当前计算的line和
 
-                    ### 当前句  的时间信息  
-                    tk_tm_ttp = list_key_sort[jj_find];
-                    vec_tk = tk_tm_ttp.split("+");
-                    st_2 = vec_tk[1]
-                    end_2 = vec_tk[2]
+            wer = wer_get(line_low, line_res_plus);
+            if wer < wer_ok: ### 变小了 先把这行合并 
+                wer_ok = wer;
+                line_res_max = line_res_plus;
+                jj_find_right = jj_find + jj_tmp;
+            else:
+                break;
 
-                    ### DING 
-                    fp_out_ok.write("%s\t%s\t%s\t%s\n"%\
-                                (tk_name_tmp, end_tmp, st_2, DING))
-                    fp_out_ok.flush()
 
-                    ### 下一句  
-                    fp_out_ok.write("%s\t%s\t%s\t%s\n"%\
-                                (tk_name_tmp, st_2, end_2, line_ttp))
-                    fp_out_ok.flush()
+#--------------------------  获取 左右 两侧的信息 -----------------------------------------
 
-                    continue;
+        ### 最上面的track+st+end
+        tk_tm_left = list_key_sort[jj_find_left]
+        vec_tk = tk_tm_left.split("+");
+        tk_name_left = vec_tk[0]
+        st_left = vec_tk[1]
+        end_left = vec_tk[2]
 
-            if wer < wer_ok:
-                wer_ok = wer
-                fp_err.write("connect_left\t%s\t%s\twer_float=%.4f\n"%(line, cont_res,wer))
-                fp_err.flush()
-                continue;
+        ### 最下面的track+st+end
+        tk_tm_right = list_key_sort[jj_find_right]
+        vec_tk = tk_tm_right.split("+");
+        tk_name_right = vec_tk[0]
+        st_right = vec_tk[1]
+        end_right = vec_tk[2]
 
-        #### 2.连接下一句 
-        if jj_find+1<N:
-            tk_tm_1 = list_key_sort[jj_find+1];
-            cont_res = dict_time[tk_tm_ok] + " " +dict_time[tk_tm_1];
+        if tk_name_left != tk_name_right:
+            print("ERROR:trackerr:%s != %s"%(tk_tm_left, tk_tm_right));
+            fp_err.write("%s\n"%(line))
+            fp_err.flush()
+            continue;
 
-            cmd="./wer \"%s\" \"%s\""%(line_low, cont_res)
-            wer = wer_get(line_low, cont_res);
-            fp_log.write("connect_2:%s\t%s\twer_float=%.4f\n"%(line_low,cont_res,wer))
+        ### 判断 连接后的wer是否符合要求 
+        if wer_ok < WER_2:
 
-            ### 得到拼接后的 wav名字和时间段 
-            vec_tk_1 = tk_tm_1.split("+"); 
-            vec_tk_ok = tk_tm_ok.split("+"); 
-            if len(vec_tk_1) != 3 or len(vec_tk_ok) != 3:
-                print("ERROR: vec_tk_1 format err!");
-                fp_err.write("%s\t%s\n"%(tk_tm_1, line))
-                continue;
-            track_conn = "%s+%s+%s"%(vec_tk_ok[0], vec_tk_ok[1], vec_tk_1[2]);
+            print("connected:wer=%.4f"%(wer_ok));
+            fp_out_ok.write("%s\t%s\t%s\t%s\n"%(tk_name_left, st_left, end_right, line))
+            fp_out_ok.flush()
+            continue;
 
-            time_minus = string.atof(vec_tk_1[1]) - string.atof(vec_tk_ok[2]);
-            #print("%.4f"%(time_minus));
-
-            if wer < WER_2 and time_minus < 0.1 :
-                ### 找到了 完全可以拼接回去 
-                wer_ok = wer
-                vec_tk = track_conn.split("+");
-                tk_name_tmp = vec_tk[0]
-                st_tmp = vec_tk[1]
-                end_tmp = vec_tk[2]
-                fp_out_ok.write("%s\t%s\t%s\t%s\n"%(tk_name_tmp, st_tmp, end_tmp, line))
-                fp_out_ok.flush()
-                continue;
-            elif wer < WER_2:
-                ### 下一句是  turn the page
-                tk_tm_ttp = list_key_sort[jj_find+1];
-                line_ttp = dict_time[tk_tm_ttp]
-                wer_ttp = wer_get(TTP, line_ttp);
-                if wer_ttp < 0.3:
-                    #### 中间有叮  输出3句  上一句 叮  下一句  
-                    print("test....");
-
-                    ### 当前句  
-                    tk_tm_1 = list_key_sort[jj_find];
-                    vec_tk = tk_tm_1.split("+");
-                    tk_name_tmp = vec_tk[0]
-                    st_tmp = vec_tk[1]
-                    end_tmp = vec_tk[2]
-                    line_tmp = line_bak[3];   
-
-                    fp_out_ok.write("%s\t%s\t%s\t%s\n"%\
-                                (tk_name_tmp, st_tmp, end_tmp, line_tmp))
-                    fp_out_ok.flush()
-
-                    ### 当前句  的时间信息  
-                    vec_tk = tk_tm_ttp.split("+");
-                    st_2 = vec_tk[1]
-                    end_2 = vec_tk[2]
-
-                    ### DING 
-                    fp_out_ok.write("%s\t%s\t%s\t%s\n"%\
-                                (tk_name_tmp, end_tmp, st_2, DING))
-                    fp_out_ok.flush()
-
-                    ### 下一句  
-                    fp_out_ok.write("%s\t%s\t%s\t%s\n"%\
-                                (tk_name_tmp, st_2, end_2, line_ttp))
-                    fp_out_ok.flush()
-
-                    continue;
-
-            if wer < wer_ok:
-                wer_ok = wer
-                #fp_err.write("%s\t%s\t%s\n"%(tk_tm_ok, line, dict_time[tk_tm_ok] ))
-                fp_err.write("connect_right\t%s\t%s\twer_float=%.4f\n"%(line, cont_res, wer))
-                fp_err.flush()
-                continue;
-
+        
         #### 还是没有  
-        fp_err.write("%s\t%s\n"%(tk_tm_ok, line))
+        fp_log.write("%s\t%.4f\t%s\n"%(line, wer_ok, line_res_max))
+
+        fp_err.write("%s\t%.4f\n"%(line, wer_ok))
         fp_err.flush()
+
+
+
             
 #----------------------------------------------------------------------------------------
     
